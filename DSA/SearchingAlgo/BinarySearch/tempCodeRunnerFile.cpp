@@ -1,0 +1,1 @@
+cout << SearchSqrt(arr,n);

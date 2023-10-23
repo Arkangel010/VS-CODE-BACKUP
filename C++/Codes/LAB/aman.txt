@@ -1,0 +1,4 @@
+variable scope - Within the paranthesis. It is the area Within the code till where the variable is accessible.
+
+Scope resolution operator (::) - It is an operator used to remove ambiguity and access as well as define various function and variable.
+local , gobal , instance 

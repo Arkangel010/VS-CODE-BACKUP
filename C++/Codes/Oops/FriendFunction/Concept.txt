@@ -1,0 +1,19 @@
+It is a type of function that is used to access the private members of the class directly with object as it arguments.Firstly we declare the function within class,and intialise it outside the class directly without the use of scope resolution.
+Its scope is not limited till the class. Its working doesnt change according to the access specifier.It can be invoked directly without the use of object.
+
+Note:
+If a function needs to access private data in objects from two different classes then define a normal function that may be declared as a friend of two different classes.
+When a function is declared as a friend in two different classes and uses the objects of those classes as arguments, declare one class in forward before the class declaration of another class.
+
+Syntax
+1.Declare friend funtion in class.
+friend returnType FunctionName(Argument);
+
+2.intialise the function outside the class.
+
+returnType FunctionName(argument){
+    //code
+}
+
+3.Call the function directly without use of object
+FunctionName(argument);

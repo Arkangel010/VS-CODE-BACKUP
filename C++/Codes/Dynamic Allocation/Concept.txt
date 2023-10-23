@@ -1,0 +1,5 @@
+Memory Allocation within the Heap Is refferred to as Dyanmic allocation.
+
+Syntax :
+
+(i) VariableDatatype*  VariablePointerName = new Datatype;

@@ -1,0 +1,8 @@
+package rest;
+import java.util.*;
+public class Arraylist {
+	public static void main(String[] args) {
+		Arraylist<String> al = new Arraylist<String>();
+	}
+
+}

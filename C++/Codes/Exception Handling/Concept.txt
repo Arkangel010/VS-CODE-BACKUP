@@ -1,0 +1,50 @@
+Exception - It is a situation in a program where abnormal termination of codes takes place due to some unwanted situations or Syntax error within the 
+            code. 
+
+            The error caused is of two types: - 
+            Compile time error : When the error which is recognised at the time of compilation of the code,then it is reffered to as Compile
+                                 time error,it is basically a syntactiacal error.
+            Runtime error : When the program abnormally terminates after compilation at Runtime due to some memory,arithmatic or other type 
+                            of Exception then is reffered to as runtime error.
+
+Exception Handling : It is the technique which we apply within a program to handle some known or expected Exception's in order to prevent the
+                     abnormal termination of the program.
+
+
+                     Methods for Exception Handling (Try - Catch):-
+                     Try  -> Throw -> Catch 
+
+
+                     within this we keep the block of code which tends to give exception within the Try block.
+                     By the help of throw keyword we pass the type of exception to the catch block argument.It can be either a integer,string,etc.
+                     And then by the use of catch block we handle the exception (basically specify(print) the occurence of error within program).
+                     Try block should have atleast one catch block along with try block.It can have multiple catch block so that we can handle multiple
+                     exception by the use of single try block.
+
+                     Syntax
+
+                    try{
+                        //block of code which contains the the code which could genrate an error.
+
+                        throw textMessage/integer etc.
+                    }
+
+                    catch(Argument/throwed argument of same datatype/ ...){
+                        //code in order to do after the error has occured.
+                    }
+
+
+
+                    Note : (i) The Argument within the catch block basically contains the throwed integer value/char/textMessage by the throw keyword
+                           within the try block or a funtion which used throw keyword.
+
+                           (ii) If we place "..." three dots within the catch block argument then the catch block would
+                           handle any type of exception and if we dont do so then the specified type of argument datatype is checked
+                           by the catch block and then the catch block is executed.
+                           
+                           (iii) If we are using multiple catch block then make sure to keep the defaut /"..." three dot argument
+                                 catch block at the end of other catch blocks oe the defaut catch block will always be executed
+                                 ignoring the other blocks.
+
+
+                            

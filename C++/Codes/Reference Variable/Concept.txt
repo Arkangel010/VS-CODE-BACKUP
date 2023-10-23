@@ -1,0 +1,18 @@
+Reference variable is an alternate name of already existing variable. It cannot be changed to refer another variable and should be initialized at the time of declaration and cannot be NULL. The operator ‘&’ is used to declare reference variable.
+
+The following is the syntax of reference variable.
+
+datatype variableName; // variable declaration
+datatype& refervaribleName = variableName; // reference variable
+
+The main differences between pointers and references are -
+
+References are used to refer an existing variable in another name whereas pointers are used to store address of variable.
+
+References cannot have a null value assigned but pointer can.
+
+A reference variable can be referenced by pass by value whereas a pointer can be referenced but pass by reference.
+
+A reference must be initialized on declaration while it is not necessary in case of pointer.
+
+A reference shares the same memory address with the original variable but also takes up some space on the stack whereas a pointer has its own memory address and size on the stack.

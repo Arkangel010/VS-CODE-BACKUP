@@ -1,0 +1,36 @@
+-Concept of PMI( Principle of Matematical Induction).
+
+1.form smaller problem function for the bigger problem.
+
+
+#Base Case  - The known value for a particular condition of the problem.
+#Assumption - we assume the function will be true for k.
+#Self Work - we find the for k + 1 for the given function.
+
+Syntax
+
+MethodName( N Parametrs )           | Bigger Problem
+{
+  
+     if(haltCondition){             | Base Case
+        return result;              |
+     }
+     return methodName(N Parametrs) | Assumption,Self Work (Smaller Problem)
+
+}
+
+
+-Concept of Euclids Algorithm
+
+// Use Euclids Algorithm - If we subtract a smaller no from a larger no,(we can reduce the large no) but the gcd will not change.
+// Gcd of (54,18) = Gcd of (36,18)
+        // a , b   =      ((a-b),b)   {a > b}
+// Gcd of (54,20) = Gcd of (20,14)
+        // a , b   =       (b,a%b)     {a > b}
+
+
+
+skipped
+
+1.to check a no is palindrome without using array.
+2.Check for arm strong no.

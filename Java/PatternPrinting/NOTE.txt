@@ -1,0 +1,2 @@
+// Use Line Equation process to create formulas for Printing Pattern.Basically plot a (x - y)graph and analyze the x, y relation for the 
+pattern.

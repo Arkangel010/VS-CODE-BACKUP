@@ -1,0 +1,14 @@
+package book;
+
+public class Tester {
+	public static void main(String[] args) {
+		RoomDetails bill = new RoomDetails("Raju", "Standard", 2, 3);	
+		System.out.println(bill.getBillId());
+		System.out.println(bill.getCustomerName());
+		System.out.println(bill.getNoOfDaysOfStay());
+		System.out.println(bill.calculateBill());
+	}
+	
+	
+	
+}

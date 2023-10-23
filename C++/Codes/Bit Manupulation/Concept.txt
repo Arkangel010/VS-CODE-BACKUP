@@ -1,0 +1,10 @@
+Bitwise Operator
+               Boolean Expression   ON Conditions   Basic conclusion
+(i) And(&) -       A * B             A and B == 1   if A == B returns A.
+(ii) OR(|) -       A + B             A, B == 1      if A != B returns A + B.
+(iii) NOT(~) -      !A               A == 0         gives -(n + 1)
+(iv) XOR(^) -     A!B + !AB          A != B         x ^ x = x, x ^ 0 = x.
+
+(v) Left Shift(no << places to Shift) -  Shifts n bits with 0 to the left.   |  
+(vi) Right Shift(no >> places to Shift) - Shifts n bits with 0 to the Right. | Mostly used to desired binary no by help of 0, 1 or some small no.
+

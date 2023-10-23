@@ -1,0 +1,65 @@
+cross Casting:
+
+Templates in C++ allow you to write generic code that can handle data of any type. However, in some cases you may need to perform casting 
+between different types of objects, which can sometimes involve cross casting.Cross casting refers to the process of casting an object from 
+one type to another, where the two types are not related by inheritance. This can be a complex operation, as there is no guarantee that the 
+target type is compatible with the source type.In C++, cross casting can be performed using the dynamic_cast operator. This operator performs
+a run-time type check to determine if the cast is valid, and returns a null pointer if the cast is not possible.
+For example:
+#include <iostream>
+
+class Animal {};
+class Dog : public Animal {};
+
+int main() {
+  Animal *a = new Dog();
+  Dog *d = dynamic_cast<Dog*>(a);
+ 
+  if (d != nullptr) {
+    std::cout << "Cross casting successful" << std::endl;
+  } else {
+    std::cout << "Cross casting failed" << std::endl;
+  }
+ 
+  return 0;
+}
+
+-Down Casting 
+
+Down casting is a casting operation in C++ that involves converting an object of a base class to an object of a derived class. This can be 
+achieved using the dynamic_cast operator.
+Here's an example program that demonstrates down casting in C++ using templates:
+
+#include <iostream>
+
+class Animal {
+ public:
+  virtual void makeSound() {
+    std::cout << "The animal makes a sound." << std::endl;
+  }
+};
+
+class Dog : public Animal {
+ public:
+  void makeSound() override {
+    std::cout << "The dog barks." << std::endl;
+  }
+};
+
+template <typename T>
+T* downCast(Animal* animal) {
+  return dynamic_cast<T*>(animal);
+}
+
+int main() {
+  Animal* a = new Animal();
+  Dog* d = downCast<Dog>(a);
+ 
+  if (d != nullptr) {
+    d->makeSound();
+  } else {
+    std::cout << "Down casting failed." << std::endl;
+  }
+ 
+  return 0;
+}

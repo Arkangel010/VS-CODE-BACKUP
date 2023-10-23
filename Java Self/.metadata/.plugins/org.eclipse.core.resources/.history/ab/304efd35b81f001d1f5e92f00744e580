@@ -1,0 +1,16 @@
+package display;
+
+public class Bill {
+
+	public static void main(String[] args) {
+		
+		Backend il = new Backend();
+		
+		il.main(7, 100, 2, 400);
+		System.out.println(il.Billid);
+		System.out.println(il.customerid);
+		System.out.println(il.discount);
+		il.display();
+
+	}
+}

@@ -1,0 +1,241 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Stair",
+            "request": "launch",
+            "mainClass": "Java.DSA.Recursion.Stair",
+            "projectName": "Vs Code_4265e491"
+        },
+        {
+            "type": "java",
+            "name": "Bubble",
+            "request": "launch",
+            "mainClass": "Java.DSA.Sorting.Bubble",
+            "projectName": "Vs Code_4265e491"
+        },
+        {
+            "type": "java",
+            "name": "Power",
+            "request": "launch",
+            "mainClass": "Java.DSA.Recursion.Power",
+            "projectName": "Vs Code_4265e491"
+        },
+        {
+            "type": "java",
+            "name": "Fibo",
+            "request": "launch",
+            "mainClass": "Java.DSA.Recursion.Fibo",
+            "projectName": "Vs Code_4265e491"
+        },
+        {
+            "type": "java",
+            "name": "Factorial",
+            "request": "launch",
+            "mainClass": "Java.DSA.Recursion.Factorial",
+            "projectName": "Vs Code_4265e491"
+        },
+        {
+            "type": "java",
+            "name": "RotateArray",
+            "request": "launch",
+            "mainClass": "Java.Array.RotateArray",
+            "projectName": "Vs Code_4265e491"
+        },
+        {
+            "type": "java",
+            "name": "Basic",
+            "request": "launch",
+            "mainClass": "Java.Basic.Basic",
+            "projectName": "Vs Code_4265e491"
+        },
+        {
+            "type": "java",
+            "name": "Basic",
+            "request": "launch",
+            "mainClass": "Java.IO.Basic",
+            "projectName": "Vs Code_4265e491"
+        },
+        {
+            "type": "java",
+            "name": "Bhak",
+            "request": "launch",
+            "mainClass": "Java.CollectionFrameWork.Bhak",
+            "projectName": "Vs Code_4265e491"
+        },
+        {
+            "type": "java",
+            "name": "Concur",
+            "request": "launch",
+            "mainClass": "Java.CollectionFrameWork.Concur",
+            "projectName": "Vs Code_4265e491"
+        },
+        {
+            "type": "java",
+            "name": "ArrayLIst",
+            "request": "launch",
+            "mainClass": "Java.CollectionFrameWork.ArrayLIst",
+            "projectName": "Vs Code_4265e491"
+        },
+        {
+            "type": "java",
+            "name": "onn",
+            "request": "launch",
+            "mainClass": "Java.Multithreading.onn",
+            "projectName": "Vs Code_4265e491"
+        },
+        {
+            "type": "java",
+            "name": "Sum",
+            "request": "launch",
+            "mainClass": "Java.Inheritance.Interface.Sum",
+            "projectName": "Vs Code_4265e491"
+        },
+        {
+            "type": "java",
+            "name": "Basic",
+            "request": "launch",
+            "mainClass": "Java.Constructor.Basic",
+            "projectName": "Vs Code_4265e491"
+        },
+        {
+            "type": "java",
+            "name": "Basics",
+            "request": "launch",
+            "mainClass": "Java.static_Keyword.Basics",
+            "projectName": "Vs Code_4265e491"
+        },
+        {
+            "type": "java",
+            "name": "Basics",
+            "request": "launch",
+            "mainClass": "Java.String.Basics",
+            "projectName": "Vs Code_4265e491"
+        },
+        {
+            "type": "java",
+            "name": "GuesserGame",
+            "request": "launch",
+            "mainClass": "Java.Project_1.GuesserGame",
+            "projectName": "Vs Code_4265e491"
+        },
+        {
+            "type": "java",
+            "name": "PatternProg",
+            "request": "launch",
+            "mainClass": "Java.PatternProg",
+            "projectName": "Vs Code_4265e491"
+        },
+        {
+            "type": "java",
+            "name": "Basic",
+            "request": "launch",
+            "mainClass": "Java.Basic",
+            "projectName": "Vs Code_4265e491"
+        },
+        {
+            "name": "C/C++: g++.exe build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: g++.exe build active file"
+        },
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "enter program name, for example ${workspaceFolder}/a.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/path/to/gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "C/C++: cpp.exe build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: cpp.exe build active file"
+        },
+        {
+            "name": "C/C++: gcc.exe build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: gcc.exe build active file"
+        }
+    ],
+    "version": "2.0.0"
+}

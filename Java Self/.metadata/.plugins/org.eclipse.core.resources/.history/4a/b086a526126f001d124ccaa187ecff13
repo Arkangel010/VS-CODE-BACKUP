@@ -1,0 +1,8 @@
+package rwefsaf;
+
+public class Learn {
+public static void main(String[] args) {
+	int array[] = {1,2,4,5};
+	System.out.println(array.length);
+}
+}

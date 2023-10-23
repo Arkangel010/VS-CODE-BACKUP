@@ -1,0 +1,35 @@
+package salary;
+
+public class Salary {
+	public static void main(String[] args) {
+
+		double[] data = { 23500.0, 25080.0, 28760.0, 22340.0, 19890.0 };
+		double z = 0;
+		double y;
+		double r = 0;
+		double m = 0;
+		double n = 0;
+
+		for (int i = 0; i < data.length; i++) {
+			y = data[i];
+			z = z + y;
+
+		}
+		System.out.println("Average salary of employee is :" + z / data.length);
+		for (int i = 0; i < data.length; i++) {
+			for (int j = 0; z > data[i]; j++) {
+				m = j;
+
+			}
+		}
+		System.out.println("The no of employess having salary Greater than average salary:" + m);
+		for (int x = 0; x < data.length; x++) {
+			for (int f = 0; z > data[x]; f++) {
+				n = f;
+			}
+
+		}
+		System.out.println("The no of employess having salary Lesser than average salary:" + n);
+
+	}
+}

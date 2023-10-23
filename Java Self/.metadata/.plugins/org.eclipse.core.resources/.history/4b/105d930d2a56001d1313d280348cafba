@@ -1,0 +1,9 @@
+package startcode;
+
+public class Afdsa {
+	public static void main(String[] args) {
+		int p = 30p++;
+		++p;
+		System.out.println(p);
+	}
+}

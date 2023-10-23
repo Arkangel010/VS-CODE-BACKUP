@@ -1,0 +1,28 @@
+package display;
+
+
+
+public class Backend {
+	int Billid ;
+	int customerid ;
+	double discount ;
+	double billamount ;
+	void main(int a,int b,double c,double d) {
+		 Billid =  a;
+		 customerid = b;
+		 discount = c;
+		 billamount = d;
+		 
+		 }
+	double display() {
+		
+		double g =(discount/100);
+		double f =billamount - g;
+		System.out.println("amount "+g);
+		System.out.println(f);
+		return discount;
+		
+	}
+	
+     
+}

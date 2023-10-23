@@ -1,0 +1,56 @@
+It is a special type of variable that it holds the address of a variable.By the use of derefrencing operator("*") we can easily access the 
+data at the address.
+Type of Pointers :-
+(i)Dataype initialised pointers.
+Ex - int *ptr
+(ii)Void Pointers - It can store the address of any pointer,but at time of derecrencing we need to cast it to the particular pointer dataype.
+                    Keep in mind that at time of casting compiler does not checks wehther the casting is done right dataype and the particuar 
+                    datatype and thus the compiler does not give an error.
+Ex - void *Ptr;
+Syntax 
+
+Datatype *PointerName = &variable;
+
+(iii)Function Pointers - Used to create pointers for function,by the use of pointers we can invoke the function.
+
+Syntax
+
+Datatype(*PointerName)(Function Arguments) = Function Name;
+(iv)Smart Pointers  -  They do not need explicit memory deallocation and thus less chances of memory leaks.It is like a wrapper for raw pointer.
+                        It comes in memory header file.
+                        It is of three type :-
+                        (a)Unique - These pointers address cannot be copied.In order to copy the pointers address we need to use move 
+                        keyword [move(pointerName);],but after the copying process the original pointer becomes null pointer.
+                        
+                        Syntax 
+                        unique_ptr<datatype>PointeName = VariableName<datatype>(Value);
+
+                        (b)Shared - As per the name the pointers address can be easily shared and there can be multilple owners.
+                        And it has a function through which we we see the no of oweners or sharing of pointer.[PointerName.use_count()]
+                       
+                        Syntax 
+                        
+                        shared_ptr<datatype>PointeName = VariableName<datatype>(Value);
+
+                        (c)Weak  - The pointer automatically delete's and dealcocate's memory when the pointer leaves the scope 
+                        or is not used within the code.
+
+                        Syntax
+
+                        weak_ptr<datatype>PointeName = VariableName<datatype>(Value);
+
+ (v)Pointer To Objects :  It is a pointer to an object.In order to access the members and functions through pointer we dereference it by astrick 
+                          (*PointerName).Attribute/Method; or by the use of arrow operator [ PointerName -> Attribute/Method] .
+                        Syntax
+
+                        ClassName *PointerName = &ObjectName ;   
+                                        or
+                        ClassName *PointerName = new ClassName ;     
+
+
+NOTE : Pointer objects can be declared to the base and derived classes.
+Pointers to the objects of a base class are type compatible with pointers to objects of both base and derived classes.
+So, a base class pointer object can point to the objects of both the base and derived class objects.
+A pointer to the object of the derived class can only point to the object of derived class but not to the object of the base class.
+        
+

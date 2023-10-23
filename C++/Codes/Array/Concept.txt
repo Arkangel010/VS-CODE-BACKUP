@@ -1,0 +1,17 @@
+1.use of Nested for loop.
+2.Array Manupulation 
+3.Two Pointer approach mainly for sorting.
+
+
+skipped 
+
+rotate an array 
+querie for sum between two index
+sorting 0,1 array or other array for increasing or decreasing order.
+
+multiplication of matrix : use of 3 nested for loop.
+
+- 2D Array Elements access - NoOfColoumns * row + Coloumn
+    Row from an Element index: ElementIndex/ NoOfColoumns index
+    Coloumn from an Element index: ElementIndex % NoOfColoumns index
+skipped video - 24 -17

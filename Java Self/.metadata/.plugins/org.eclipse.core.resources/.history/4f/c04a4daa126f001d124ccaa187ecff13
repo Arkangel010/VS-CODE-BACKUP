@@ -1,0 +1,15 @@
+package rwefsaf;
+
+public class Learn {
+public static void main(String[] args) {
+	int array[] = {4,6,3,5,8,2};
+	int pair = 0;
+	for(int i = 0; i < array.length;i++) {
+		for (int r = 0; r < array.length;r++) {
+			if (array[i]+array[r+1] == 7) {
+				pair++;
+			}
+		}
+	}
+}
+}

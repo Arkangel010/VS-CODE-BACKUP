@@ -1,0 +1,14 @@
+1.Inline Argument - It is used when same function is called multiiple times and in order to bypass the process of calling the function and makeing copy of arguements
+                    we use inline arguement,it gradually helps in increasing the cpu speed,by reducing the space complexitiy.It cannot be used at times when a function uses recusion.
+                    when inline argument is used the code within the function is directly executed within the main block without creation of reference variable.
+
+                    Syntax:
+                    inline returntype FunctionName(argument){
+                        //code
+                    }
+2.Default Argument - when we pass a value to the argument at time  of function creation,them we need not to neccesary pass an argument at time of function calling,the compiler considers the value passed at time of function creation. 
+                    Note: assign Default arguement at right most end ,if there a multiiple aruguments.
+                    Syntax:
+                    returntype  FunctionName(argument = value){
+                        //code
+                    }

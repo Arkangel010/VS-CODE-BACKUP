@@ -1,0 +1,3 @@
+check for Syntax error.
+check for looping error.
+check internal working of funtion ,if using a predefined function by seeing the defination of the function.(mainly at time of overloading)

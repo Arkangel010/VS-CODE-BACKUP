@@ -1,0 +1,21 @@
+package salary;
+
+public class Salary {
+	public static void main(String[] args) {
+		double[] data = {23500.0, 25080.0, 28760.0, 22340.0, 19890.0};
+		double z = 0;
+		for(int i=0;i<=data.length;i++) {
+			z= data[i];
+			z +=z;
+			
+				
+		}
+		System.out.println(z/data.length);		
+				
+				
+			
+		
+	}
+
+}
+

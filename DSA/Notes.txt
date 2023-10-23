@@ -1,0 +1,6 @@
+(i) Dutch National Flag Algo [2 pointer Approach]
+(ii) Pascals Prism. Important Formula c = c * (i - j)/j.
+(iii) Bit Manupulation
+(iv) Index based visiting.
+(v) Sorting
+(vi) Binary Search

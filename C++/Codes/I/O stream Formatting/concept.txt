@@ -1,0 +1,72 @@
+Formatted I/O - The formatting of data such as alignment, after decimal digits etc can be done in order to make the data more presentable. C++ 
+offers a number of function for formatting the output.These features include :-
+
+(i) ios class function and flags.
+(ii) Manipulators
+(iii) User - Defined output functions - It is basically extraction and insertion operator overloading.
+
+
+1.cout.width(width size); - It is used to specify the no of unused spaces before the output. 
+
+2. precision(precision size) - It is used to set the no of decimal places of a float value, by default it starts precising form the left most position of the value instead after the decimal position.In order to fix use point 4.
+
+3.fill('character value') -  It fills the unused spaces with the character value.
+
+4.cout << fixed - It is used to set the counter to the precision to precise after decimal value.
+
+5.setf(formatting flags, Bit Field) - It is a member function of ios class, which is used to set specific format flags.It accepts two arguments, first is formatting flag(It specifies the format action required fot the output) and its corresponding bit Field(It specifies the group to which the formatting flag belongs).  
+
+        Bit fields	Flags
+ios::adjustfield	ios::left - left justification
+                    ios::right - right justification
+                    ios::internal - padding after sign
+
+ios::floatfield	    ios::scientific - for scientific notation
+                    ios::fixed - for fixed point notation
+
+ios::basefield	    ios::oct - change to octal
+                    ios::hex - change to hexa decimal
+                    ios::dec - change to decimal
+
+5. unsetf(format structure) - Used to remove specified formatted structure.
+(ii) Manipulators - They are special functions that can be included int the I/O stream to alter the format parameter of the stream.
+                    These are included in the iomanip header file.It is directly used within the cout printing statement. It is of two types 
+                    (i) Parametrized 
+                cout << setw(width) - To set the field width.
+                        setfill('character value') - To set the fill chracter.
+                        setbase() - Set the base of the number 
+                        setprecision() - Set the floating point precision 
+                        setiosflags() - set the format flag f
+                        resetiosflags() - clear the flag specified by f.
+                                                                                   
+                                                                                   
+                                                                                    
+                    (ii)Non - Parametrized
+                        left             sets ios:: left flag of ios::adjustfield
+                        right            sets ios:: right flag of ios::adjustfield
+                        internal         sets ios:: internal flag of ios::adjustfield
+                        dec              sets ios:: dec flag of ios::basefield
+                        dex              sets ios:: hex flag of ios::basefield
+                        oct              sets ios:: oct flag of ios::basefield
+                        scientific       sets ios:: scientific flag of ios::floatfield
+                        fixed            sets ios:: fixed flag of ios::floatfield
+                        showbase         sets ios:: showbase flag 
+                        noshowbase       resets ios:: showbase flag 
+                        showpoint        sets ios:: showpoint flag,Shows trailing decimal point and zeros 
+                        noshowpoint      resets ios:: showpoint flag 
+                        showpos          sets ios:: showpos flag,It prints '+ve' sign before positive number 
+                        noshowpos        resets ios:: showpos flag 
+                        endl             used to print in newline
+                        ends             used to print after a space;	 
+                        ios::base	     It use base indicator as output
+                        ios::uppercase	 It uses uppercase letters for hexa decimal output
+                        ios::skipus	     Skips the whitespace characters as the input
+                        ios::unitbuf	 Clears all stream after insertion
+                        ios::stdio	     Flush stdout and stderr after insertion
+
+
+    for width =       cout.width()
+     for precision =   cout.precision()
+     for fill =        cout.fill()
+     for putting zero after decimal =   cout << fixed << a;
+     

@@ -1,0 +1,11 @@
+package startcode;
+
+public class Afdsa {
+	public static void main(String[] args) {
+		int p = 30;
+	
+		p++;
+		System.out.println(p);
+		
+	}
+}

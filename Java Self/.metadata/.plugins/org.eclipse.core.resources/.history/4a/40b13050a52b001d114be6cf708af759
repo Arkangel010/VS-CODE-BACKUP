@@ -1,0 +1,23 @@
+package rest;
+
+import java.util.LinkedList;
+import java.util.ListIterator;
+
+public class Linked {
+	public static void main(String[] args) {
+		LinkedList<String> ls = new LinkedList<String>();
+		ls.add("ramesh");
+		ls.add("suresh");
+		ls.add("jayesh");
+		ls.add("naresh");
+		
+		ListIterator<String> i = ls.listIterator();
+		int y;
+		for (y = 0;i.hasNext()== true;y++) 
+			y++;
+		for(int z = 0;z<= y;z++)
+			i.next();
+		
+	}
+	
+}

@@ -1,0 +1,17 @@
+-RTTI
+
+RTTI (Runtime Type Information) is a mechanism in C++ that provides information about an object's data type at runtime. This information is 
+typically stored as part of an object's class hierarchy, and it allows programs to determine the type of an object even if the type of the 
+object is not known at compile-time. RTTI enables a number of important programming techniques, including dynamic dispatch, dynamic casting,
+and reflection.RTTI was added to the C++ language because many vendors of class libraries were implementing this functionality themselves. 
+This caused incompatibilities between libraries. Thus, it became obvious that support for run-time type information was needed at the language 
+level.
+
+
+For the sake of clarity, this discussion of RTTI is almost completely restricted to pointers. However, the concepts discussed also apply 
+to references.
+
+There are three main C++ language elements to run-time type information:
+•   The dynamic_cast operator - Used for conversion of polymorphic types. (ptr twc = dynamic_cast<ptr twc>(ptr tbc))
+•   The typeid operator -  Used for identifying the exact type of an object.(typeid(*ptr).name())(typeinfo header should be included)
+•   The type_info class -  Used to hold the type information returned by the typeid operator.

@@ -1,0 +1,3 @@
+display function me deafault parameter(if changes in deafault parameter is made) ke baad add karna aur user addtional features message show karna .
+
+salary should always be placed at 0 index of the vector.

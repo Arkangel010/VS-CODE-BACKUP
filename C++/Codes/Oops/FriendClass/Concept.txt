@@ -1,0 +1,13 @@
+It is a class which can access the private member of the specified friend class within another class by the use of object creation.
+
+Note:
+If a class needs to access private data in objects from two different classes then declare one class in forward before the class declaration of another class.
+
+
+Syntax
+
+1.Include the statement to the class whose private member needs to the other class.
+
+friend class ClassWhichNeedsToAccessThePrivateMembersName ;
+
+2.Create object within the ohter class directly access the private Variable.

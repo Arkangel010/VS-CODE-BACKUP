@@ -1,0 +1,67 @@
+Scope Resolution Operator(::) - It is basically an Operator that is used to access various member function as well as data members, outside
+                                the class as well as it is used to resolve the Ambiguity.
+
+
+
+Functions: 
+(i)Used  in case the Function is declared in the class but if we want to define it outside the class,after or before main Function.
+                            Note: The function must be declared into the class. and also to access the local and global variable.
+
+Syntax (RCSN)- 
+(1)Declare the Method inside the class.
+(2)Define the funtion outside class using the scope Resolution Operator
+
+        returnType ClassName :: MethodName(){
+                    //code
+        }
+
+
+
+(ii) To access a global variable when there is a local variable with same name: 
+
+                        #include<iostream>
+                        using namespace std;
+
+                        int x; // Global x
+
+                        int main()
+                        {
+                        int x = 10; // Local x
+                        cout << "Value of global x is " << ::x;
+                        cout << "\nValue of local x is " << x;
+                        return 0;
+                        }
+
+(iii)To access a class’s static variables.As it can be intialised Just outside the class.
+                                #include<iostream>
+                                using namespace std;
+
+                                class Test
+                                {
+                                public:
+                                        static int y;
+                                };
+
+                                // In C++, static members must be explicitly defined
+                                int Test::y = 2;
+
+                                int main()
+                                {
+                                        Test obj;
+                                        cout << "\nTest::y = " << Test::y;
+                                        return 0;
+                                }
+
+(iv) In case of multiple Inheritance: If the same variable name exists in two ancestor classes, we can use scope resolution operator to 
+distinguish. 
+
+Syntax - ClassTagName :: FunctionName();
+
+(v)  For namespace If a class having the same name exists inside two namespaces we can use the namespace name with the scope resolution 
+operator to refer that class without any conflicts.
+
+Syntax -  NameSpaceTag :: FunctionName();
+
+(vi) Refer to a class inside another class: If a class exists inside another class we can use the nesting class to refer the nested class
+ using the scope resolution operator
+

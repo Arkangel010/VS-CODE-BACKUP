@@ -1,0 +1,29 @@
+Dofination - The process of representing one form in multiple forms is known as Polymorphism.Here one form representing the original method always resides in the base class and multiple forms represent the overridden method which reside in derived classes.
+
+Polymorphism is derived from two Greek words poly and morph. The word poly means many and morph means form. So polymorphism means many forms.
+
+Real life example of polymorphism is a man having different behaviours in different situations like father, son, employee, husband, brother, customer, passenger, student and so on.
+
+In C++, polymorphism is divided into two types:
+1. Compile time polymorphism or Static binding or Early binding : This is achieved by function overloading or operator overloading
+2. Runtime polymorphism or Dynamic binding or Late binding : This is achieved by function overriding
+
+A binding refers to the process that is to be used for converting functions and variables into machine language addresses.
+Binding means matching the function call with the correct function definition by the compiler.
+ It takes place either at compile time or at runtime.
+In early binding, the compiler matches the function call with the correct function definition at compile time. 
+It is also known as static binding or compile time binding.
+
+By default, the compiler goes to the function definition which has been called during compile time.
+
+In late binding, the compiler matches the function call with the correct function definition at runtime. 
+It is also known as dynamic binding or runtime binding.
+In late binding, the compiler identifies the type of object at runtime and then matches the function call with the correct function definition.
+By default, binding takes place early. Dynamic binding can be achieved by declaring virtual functions.
+
+Applications : 
+
+(i) Funtion overloading : Function with same name but different arguments ,can have different returnType within a class is reffered to as Function oveloading.
+                          when the function is called then the compiler matches the arguments and calls the particular function with matching argument list.
+
+                          Note - Passing constants within the argument will cause Ambiguity within Function call.

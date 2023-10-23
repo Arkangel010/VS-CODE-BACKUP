@@ -1,0 +1,80 @@
+package book;
+
+public class RoomDetails implements RoomBillComponent{
+	int billId = 101;
+	private String CustomerName;
+	private String typeOfRoom;
+	private int noOfExtraPersons;
+	private int noOfDaysOfStay;
+	static int counter;
+	
+	 RoomDetails(String customerName,String typeOfRoom,int noOfExtraPerson,int noOfDaysStay) {
+		this.CustomerName = customerName;
+		this.typeOfRoom = typeOfRoom;
+		this.noOfDaysOfStay = noOfDaysStay;
+		this.noOfExtraPersons = noOfExtraPerson;
+	}
+
+	 int getBillId() {
+		 billId = counter;
+		 counter++;
+		 System.out.println(counter);
+		 return counter;
+	 }
+	 
+	public String getCustomerName() {
+		 return CustomerName;
+	 }
+	 
+	public String getTypeOfRoom() {
+		 return typeOfRoom;
+	 }
+
+	public int getNoOfExtraPersons() {
+		return noOfExtraPersons;
+	}
+
+	public int getNoOfDaysOfStay() {
+		return noOfDaysOfStay;
+	}
+	 
+	boolean validateNoOfExtraPerson() {
+		if (noOfExtraPersons>2 && noOfExtraPersons<0)
+			System.out.println("We don't accept more than 2 Extra Persons in a Room!!! Kindly Book an additional Room.");
+		return true;
+	}
+	
+	boolean validateTypeOfRoom() {
+		if (typeOfRoom != "Standard" ||typeOfRoom != "Deluxe" ||typeOfRoom != "Cottage" )
+			System.out.println("Enter a specified Type of Room!!");
+			return true;
+	}
+	
+	boolean validateNoOfDays() {
+		System.out.println("KIndly ensure the No of Days: "+noOfDaysOfStay);
+		return true;
+	}
+	@Override
+	public float calculateBill() {
+		validateNoOfDays();
+		validateNoOfExtraPerson();
+		validateTypeOfRoom();
+		float totalBill = 0;
+		if (typeOfRoom.equalsIgnoreCase("Standard")){			
+			totalBill = (float)((noOfDaysOfStay*2500)+noOfDaysOfStay*(FOOD_CHARGE)+(EXTRA_PERSON_CHARGE*noOfExtraPersons));
+				
+		}
+		
+		else if(typeOfRoom.equalsIgnoreCase("Deluxe")) {
+			totalBill = (float)((noOfDaysOfStay*3500)+noOfDaysOfStay*(FOOD_CHARGE)+(EXTRA_PERSON_CHARGE*noOfExtraPersons));
+		}
+		
+		else if(typeOfRoom.equalsIgnoreCase("Cottage")) {			
+			totalBill = (float)((noOfDaysOfStay*5500)+noOfDaysOfStay*(FOOD_CHARGE)+(EXTRA_PERSON_CHARGE*noOfExtraPersons));
+			
+		}
+		totalBill = totalBill + (float)TAX*totalBill;
+		return totalBill;
+	
+	}
+}

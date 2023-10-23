@@ -1,0 +1,28 @@
+Time Complextiy - O(log n)
+Space Complextiy - O(1) 
+
+Applied when the data can be divided into two different search space (sets), where elements in set a is less than target element where as the elements in set b is greater than the target element or vice versa, constantly by the use of pointers we keep on breaking the array into two parts and adjust the pointers.
+Modified  Formula for calculating mid is : low Pointer + (High Pointer - Low Pointer)/2  (this is done because at higher low and high pointer value , in order to stop the overflow of the integer variable contaning the value of mid element) (Derivation - (High + Low + Low - Low)/2)
+The Data should be in a monotonic order.
+Basic Initiation as well as changes are made by the use of 3 condtions 
+
+1.if(Low Pointer >= High Pointer) //Base case (never changes)
+2.if(arr[mid] == target)           |
+3.if(arr[mid] < target)            | All these changes according to situation or Requirement.
+4.else if(arr[mid] > target)       |
+
+Types of Question Formation:
+
+(i) Classical Problems
+(ii) Find in Search Space(sorted){Maximize or Minimize the search space}, Predicate Function
+(iii) Index based observation.
+
+
+Steps to solve
+(i) Brutforce
+(ii)sorting
+(iii) Two pointer apporoach
+(iv) BS
+
+
+NOTE: When we can see that the answer exists between some search space neglecting the other answer.

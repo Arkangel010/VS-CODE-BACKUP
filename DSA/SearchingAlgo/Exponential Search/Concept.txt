@@ -1,0 +1,7 @@
+Exponential Search - It is a Searching method which helps find bound wihtin which the element could be present and the element needs to be sorted, basically used when the given 
+array is having a chunk of element or is infinite, and after applying this algo we could easily apply Binary Search in order to find the exact 
+position of the element.
+
+AKA - (i) Doubling Search
+      (ii) Galoping Search
+      (iii) Struzik  Search

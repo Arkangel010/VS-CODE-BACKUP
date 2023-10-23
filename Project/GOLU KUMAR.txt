@@ -1,0 +1,21 @@
+
+@User Name : GOLU KUMAR
+Date of generation : Mon May 29 22:30:29 2023
+
+							 >> MONTH NAME : MARCH <<
+							    -----------
+ - Monthly Salary : 100000
+
+ - House Rent : 3000
+ - Food & Grocerie Ependiture : 2000
+ - Shopping Expenditure : 200
+ - Medical Expenses : 500
+ - Entertainment Expenses :  100
+ - Insurance Premium : 300
+ - Telecom Bill : 200
+ - LPG Gas Bill : 400
+ - Electricity Bill : 300
+
+ -> User Addtitonal Expenses: 
+
+ - russian Expenses : 5000

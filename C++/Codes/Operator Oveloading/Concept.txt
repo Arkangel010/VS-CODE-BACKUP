@@ -1,0 +1,45 @@
+Define: We can redefine the working of operators within c++.It is basically a special type of function.We use operator overloading basically
+when when we to perform operations on user defined data type.We cannot redefine the working of some operator such as :
+
+sizeof
+typeid
+Scope resolution (::)
+Class member access operators (.(dot), .* (pointer to member operator))
+Ternary or conditional (?:)
+
+
+Syntax
+
+returnType operator OperatorToBeModified(Argument) 
+{
+    //code
+}
+
+
+
+-Overloading of stream operators( << , >>)
+
+In C++, stream insertion operator “<<” is used for output and extraction operator “>>” is used for input. 
+We must know the following things before we start overloading these operators. 
+1) cout is an object of ostream class and cin is an object of istream class 
+2) These operators must be overloaded as a global function. And if we want to allow them to access private data members of the class, we must make them friend.
+
+Syntax:
+
+friend ostream & operator << (ostream &out, const Complex &c)
+{
+    out << c.real;
+    out << "+i" << c.imag << endl;
+    return out;
+}
+ 
+friend istream & operator >> (istream &in,  Complex &c)
+{
+    cout << "Enter Real Part ";
+    in >> c.real;
+    cout << "Enter Imaginary Part ";
+    in >> c.imag;
+    return in;
+}
+
+NOTE: At the time of overloading << operator the Argument should be kept const.

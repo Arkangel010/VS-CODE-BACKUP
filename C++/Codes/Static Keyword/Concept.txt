@@ -1,0 +1,44 @@
+-Static Data Member: 
+
+The data members and member functions of a class may be qualified as static, so there may be static data members and static member functions.
+
+A static data member of a class is just like a global variable for its class, i.e. the static data member is globally available for all the objects of that class type.
+The static data members are usually maintained to store values common to the entire class.
+
+For instance, a class may have a static data member keeping track of its number of existing objects.
+A static data member has the following properties:
+
+1. It is initialized to zero when the first object of its class is created and no other initialization is permitted to the same static data member.
+
+2. Only one copy of the static data member is created for the entire class and is shared by all the objects of that class, no matter how many objects are created.
+
+3. It is visible only within the class but its lifetime is the entire program.
+
+Synatax: 
+
+static datatype VariableName; 
+--------------------------------------------------------------------------------------------------------------------
+Note : It is intialised outside the class by the use of scope resolution operator.
+Since they are associated with the class rather than an object, they are also known as class variables.
+Static variables are initialized to zero by default. A user can also initialize a value to the static variable as:
+---------------------------------------------------------------------------------------------------------------------
+
+Const static data members of integral types (char/short/int/long) can be initialized inside their class.
+Since an initialization is also a definition, so no further definitions are needed outside the class.
+Let us consider an example:
+class ConstStaticData {
+	static const int price = 2500; // initialization here itselfstatic const char *name; // non integral type must be defined outsidestatic float value; // non-const must be defined outside
+	...
+};
+const char* ConstStaticData::name = "Software"; // non integral type defined outside the classfloat ConstStaticData::value = 25.75; // non-const data member defined outside the class
+
+
+Static Function:
+
+A static member function can access only the static data members of the same class and it does not access any non-static data members.
+A static member function can be declared in the class definition by using the keyword static as:
+static return-type function-name(arguments) {
+	...
+}
+A static member function can be called by using class name instead of object as:
+className :: FunctionName();

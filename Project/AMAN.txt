@@ -1,0 +1,23 @@
+
+@User Name : AMAN
+Date of generation : Thu May 25 22:41:51 2023
+
+							 >> MONTH NAME : JAN <<
+							    -----------
+ - Pocket Money : 20000
+
+ - Hostel Fees/Flat Rent : 13000
+ - Staionary Expenses : 400
+ - Shopping Expenses : 500
+ - Transportaion Expenses : 30
+ - GYM Fees :  0
+ - Street Food Expenses : 600
+ - Telecom bill : 399
+ - Outing Expenses : 500
+ - Vacation Expenses : 0
+
+ -> User Addtitonal Expenses: 
+
+ - Pet Expenses : 300
+ - Car Expenses : 399
+

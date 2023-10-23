@@ -1,0 +1,22 @@
+1.FileName Cant have spaces in between.
+2.File Extensions for :- (a)c - .c
+                         (b)c++ - .cpp
+                         (c)java - .java
+2.Run code in terminal.
+3.Environment setting :-  (a) Find bin folder within the mingw file.
+                          (b) Copy the folder location by clicking on address tab.
+                          (c) Open the Environment variable setting.
+                          (d) In system variable edit the path.
+                          (e)Create a new path and paste the bin file location.
+4.Download and install Extensions :- (a)c/c++  
+                                     (b)code runner                    
+5.In setting Configration. - (i)Turn on save file before Execution.
+                             (ii)Open in terminal
+                             (iii)In Launch.json File turn externalConsole True
+                             (iv)
+
+
+
+6. Shortcuts :- Format all the text - ALT + SHIFT + F
+                Edit all similar words at once - CTRL + D    
+                Comment out selected block of code - CTRL + /                                  

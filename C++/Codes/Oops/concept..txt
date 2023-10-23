@@ -1,0 +1,107 @@
+Class : It a Blueprint of characteristics as well as behavior of Real World Objects.It is a collection of Attribute and Methods.
+
+The declaration of a class involves the declaration of its four associated attributes:
+
+1. Data members: describes the characteristics of a class, and there may be zero or more data members of any type in a class. The Local variables within a class.
+2. Member functions: describes the set of operations that may be applied to objects of that class, and there may be zero or more member functions for a class. The Methods/Functions within a class.
+3. Program access levels: depending on the access levels private, public and protected, the access to them are allowed or denied.The Access Specifiers.
+4. Class tagname: describes a type specifier for the class using which objects of this class type can be created. The Name of the class in order to create object.
+
+C++ has three access specifiers, namely:
+1. public
+2. private
+3. protected
+Access specifiers in the program are followed by a colon. A user can use all three specifiers in the same class to set different boundaries for different class members.
+
+By default (if no access specifier is specified), all the members of a class are private. Each member is secured and it prevents the accessing of members outside the class.
+
+The private members can be accessed only from within the class and the public members can be accessed from outside the class also.
+When all the members are private, there is no way to access private data members of the class. So, at least one member function must be specified as public.
+
+When the members are public, anyone can access the public members from inside and outside the class.
+
+The protected access specifier is similar to private, it makes class member inaccessible from outside the class, but they can be accessed by any subclass of that class. (Used in Inheritance)
+
+
+Class in c++ is has concept linked with the structure datatype in c.
+Basic class declaration
+
+-------------------------------------
+Note : Nesting of class is allowed.
+-------------------------------------
+
+
+class Tagname {
+    public : // AccessSpecifier format( AccessModifierName : )
+    //Attributes (Variables)
+    //Methods(Functions)
+};
+
+A class declaration specifies only the structure of the object. An object is a run time instance of a class.
+Before accessing a member of a class, it is necessary to allocate the required memory space to that member.The object is a sort of Reserved memory for object creation.
+The object is sort address through which we can access its member variable and member Function.
+int main(){
+    className ObjectName; //Object Creation.
+
+    ObjectName.(Attribute/Method Name);
+
+    return 0;
+}
+
+Note :By default, all members of a class are private if you don't specify an access specifier.
+
+Scope Resolution Operator(::) - Used  in case the Function is declared in the class but if we want to define it outside the class,after or before main Function.
+                            Note: The function must be declared into the class. and also to access the local and global variable.
+
+Syntax - 
+(i)Declare the Method inside the class.
+(ii)Define the funtion outside class using the scope Resolution Operator
+
+        returnType ClassName :: MethodName(){
+                    //code
+        }
+        
+
+Contructors
+
+It is special type of method which is called when the object is intialised.
+The constructor has the same name as the class, it is always public, and it does not have any return value.
+ 
+
+In order to inherit a class :- 
+Inheritance :- we can directly access the data members/ member function of the Inherited class.
+
+If a class is inherited then then the constructor of inherited class is called by default if the derived class does not have a constructor.
+If the multiple classes are inherited at once then the constructor of virtual class is perffred to be intialised first,in normal constructor
+of Inheruted classes order of left to right is executed.
+
+Note: Remember to include the file containing the Base class by :-
+
+#include "FileName"
+
+(when we include the file the code is appended just from a new line,if we define a funtion of a class within another file then we need to use scope Resolution Operator.)
+Syntax: 
+
+class ClassName : AccessModifier ClassNameToBeInherited , AccessModifier 2NDClassNameToBeInherited{
+
+};
+
+
+-> In order to call the constructor of Inherited classes we use :
+
+class ClassName : AccessModifier 1STClassNameToBeInherited , AccessModifier 2NDClassNameToBeInherited{
+        className(argument) : 1STClassNameToBeInherited(argument) , 2NDClassNameToBeInherited(argument){
+
+        }
+};
+
+By the use of colon we can call the Contructors of inherited class and the argument we passed in the constructor of the derived class constructor
+we can use the values within the argument of constructor we called in derived class the other inheruted class Contructors to intialise the argument of 
+base class.when the object of the derived class will be formed then we are only able to pass arguments within the derived class constructor and
+the Variable name of the  derived class constructor is used by the base class constructor to initialize the argument of base class.
+
+It has Four Pillars:
+(i) Encapuslation - It refers to hiding of Data.
+(ii) Abstraction -  It refers to Showing the user neccecisity data and hiding the others.
+(iii) Inheritance - It refers to reusing the code, from other classes.
+(iv) Polymorphism - It is reffered to as using a single object/code for multiple purposes.
