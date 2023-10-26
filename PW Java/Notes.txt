@@ -1,0 +1,1231 @@
+Computer : Anything Electronic device that takes an input/Data and process it and provides some output or Result we call it as computer.
+
+Types:
+1.Super Computer
+2.Mainframe Computer 
+3.Mini Computer 
+4.Micro Computer
+
+Feature :
+
+1.Speed
+2.Accuracy
+3.Dilligence
+4.Versatility
+5.Realiability
+6.Memory
+
+Components :
+
+1.I/O 
+2.CPU
+3.Primary Memory
+4.RAM (volatile, fast, Made of Semi - conductor, Works as a data transmitter to the Processor and vice versa to the Hard Disk)
+5.Hard Disk/ SSD (Non - Volatile, slow, Made of the Magnetic Disk)
+
+
+PlaTform - Combination of Processor as well as Operating System is commnly reffred to as Platform.
+
+Programming : It is the process of creating a set of instructions that tell a computer how to perform a task.
+
+Types:
+
+(i) Statically Typed : Datatype needs to be initialized at Compile time only.EX - Java, c++, c etc. 
+(ii) Dynamically Typed : Datatypes need not to be initialized, it is automatically initialized at runtime. Ex - Python, JavaScript etc.
+
+Data structure and algorithm : a data structure is a named location that can be used to store and organize data.And ,an algorithm is a collection of steps to solve a particular problem.
+
+Paradigms: a typical example or pattern of something; a pattern or model.
+Programing Paradigms : 1.Procedual Programming :codes written in set of Procedures(known as functions/Sub Routine) 
+				Ex- You are given a work to take input from user and calculate sum of no,the program will be divided into 3 Sub Routines(Taking input,calculation,Printing result )
+				 some langues ex- C,Basic,Pascal
+			    2.Functional Programing : It contains only pure functions.Functions means a chunk of codes for a particular work.
+							Pure Functions Properties 
+							1.They follow strict control flow.
+							2.They do not change any external factor.
+							
+			    3.Objeect Oriented Programing : In this data is organised in the form of classes and object rather than function and procedure.
+									Objects : It is a real world entity.
+									class : It is a user defined blueprint.
+									methods : Things an object can do.
+									Attributes : The features an object has.
+Java : It is a class based ,case Sensitive object oriented programming language,which makes it very easy to write,compile and debug code.Developed by James Gosling (1995), and is platform independent as well as follows WORA(write once Run anywhere).
+			JVM creates a .class extension byte file.
+
+
+Features 
+1.Java is an object oriented programming language.
+2.Java is a platform independent language.
+3.It is fairly Simple & secure.
+4.It has a large standard library. 
+
+ 
+
+Main function
+
+shortcut in intellij (psvm)
+ Public static void main (strings args[]){}
+ Public -  access modifier 
+ static - allows to call this method without creating any object of class.
+ void -  return type
+ main - function name fixed
+ String args[] - Command line arguments
+
+Attributes : The Fixed Properties of the object. ex - weight of human, height of the human etc.
+
+Methods : The Functions that an object can Perform. ex - Moving of human, Animal etc.
+
+Class - It is blueprint of a real time entity.It is a collection of Attribtes  and Methods.
+
+
+
+Object : It is a real world entity.It is the instance of a class.
+
+
+
+-Way to create a class 
+
+AccessModifier class Class Name{
+
+}
+
+
+-Way to create an object in a class
+
+ ClassName objectRefernceName = new ClassName();
+
+NOTE: ClassName objectReferenceName, it is Reference variable.
+
+-Way to create main function(within the class)
+
+public static void main(Stings args[]){
+         //code 
+}
+
+NOTE: The Presence of String args[] , lets you give pass data at launch time through commmand line.
+
+Garbage Collector - It is a system in java, which automatically deallocates memory occupied by the object at time of creation.Internally calls finalize method.
+
+Variables: Titles of reserved memory location.
+Syntax 
+dataType Variable_name = value;
+
+-Types:
+(i) static 
+(ii) Instance - It is allocated within the heap.
+(iii) local - Allocated within the stack memory.Generally variables created wihtin the main method.
+-Integer type Data(To store any whole no Data): byte, short, int, long( L suffix is used)
+Range = -2 ^ (bit - 1) to 2 ^(bit - 1) - 1 [1 byte - 8 bits ]
+
+-Float Data(Decimal Points no) : float(f suffix req), double
+-Character Data (Single letter) - char( value needs to be in '' commas)
+-Word or sentence - String 
+
+
+Note: There are 128 total no of characters, according to the ASCII,but java follows UTF - 16 format, which has 65536 characters.There is 32 bit difference between upper and lower character.The default value of Integer or floating data is 0, whereas the default value for String or char is NULL.
+
+Type Casting - Changing of data from one type to other type is Known as type casting.It is of two types :
+(i) Implicit - When we convert the lower range datatype to a higher range datatype, we need not explicit task.
+(ii) Explicit - When we try to convert higher range data to lower range data we  need to do explicit task in order to convert.
+
+Syntax 
+
+variableName = (DatatypeOfFinalVariable) VariableName or Data to be casted.
+
+
+
+Java Naming Conventions
+>Lower case - Packages Name(EX -hello )
+>Upper case - (EX -HELLO )
+>Camel case - functions ,Varibles (EX - moneyBorrowed)
+>Pascal case - class name (EX - MoneyBorrowed)
+>Snake case - (EX - hello_world)
+>Upper Snake case\Screaming Snake case - constants (EX - MIN_CAPACITY)
+
+Java Identifiers : Names for any functions,varibles,class or any such thing is known as Identifiers.
+
+Ways to show Output 
+
+1.System.out.println(); - Internally implements the toString method.
+
+Ways to take Input 
+1. Using scanner class
+It helps in taking input from the user.
+Syntax 
+
+1.Import scanner pakage 
+Import java.util.Scanner;
+
+2.Create an object of scanner class
+Scannner sc = new Scanner(System.in);
+
+3.Using various methods to take various types of datatypes
+sc.next(); - Used to take word or character as input.
+sc.nextline();
+sc.nextDataType(); - Used to take input of no Datatypes.
+
+
+Operators
+Relational Operators 
+Ex - ==(Equals to ) , !(NOT Equals),>,<
+
+Logical Operators 
+Ex - && (AND operator),||(OR operator),! (NOT operator)
+
+Assignment Operators 
+Ex - += ,-=,*=,etc.
+ 
+Ternary Operators - It is short way to use if conditon.In this we assign a condition using the below syntax and if the condition is true then it returns ans1 and if false it returns ans 2 within a variable.
+
+variable = (condition)? result1 :result2 
+
+Post Increment - Assign/Compute first then increment. (sab save location of result ka khel hai)(do refer this for clear understanding : https://www.youtube.com/watch?v=TnJ_bzLfUXk)
+Ex - Q++
+
+Pre Increament - Increment first then Assign/Compute.
+Ex - ++Q
+
+Operator Precidence
+Refer SS - 1 
+
+Conditionals
+
+If statement
+ 
+if(codition) {
+  // code
+}
+else if(condition -2){
+ //code 
+}
+
+else {
+//code
+
+}
+
+Nested If - else statement 
+ if(condition -1){
+   if(conditon -2){
+      //code
+} else {
+     //code
+   }
+} else {
+ //code 
+}
+
+Note: In order to put multiple condition within a single if condition use logical operators.
+
+Switch case
+
+switch(expression){
+  case x ;
+  //code 
+  break;
+  case y ;
+  //code 
+  break;
+  default;
+   //code
+ }
+
+Loops 
+
+It is used to do work repedtly until the requirement is accompained.
+
+While (condition ) {
+  // code 
+}
+
+for(init-statement;condition;final-expression){
+ //code 
+}
+
+do{
+ //code
+} while (condition);
+
+Note : In order to take multiple input put scanner input variable within the loop and put contidion in order to stop the contionuous input loop.
+
+Some Keywords for Loops 
+
+break;
+continue;
+
+Labels
+
+we can use lables for a Loop.These are basically names we specify to the loop and we can use break and continue along with the specified names in order to decide the termination of a particular loop.
+
+EX - LoopName1: for(varible name;condition;result){
+          loopName: for(varible name;condition;result){
+          break LoopName1;
+  }
+}
+
+Parity - It is the modulus of a no when divided by two.(No % 2)
+
+
+Methods
+
+Methods are block of code performing some action which runs only when its called.
+when we use parameter a copy of the variable is intantiated and used to process the code block not the actual vatiable aka pass by value method.
+
+ 
+accessSpecifier returntype MethodName( Parameter ){
+             //code //AKA method body
+}
+
+To call a method 
+MethodName();
+
+-Method Overloading 
+When we have functions with same name but different arguments/Parameters within a class then, it is reffered to as method overloading and when the function is called then the parameter is matched and according to that the particular function is called.
+
+Automatic promotion in Method Overloading 
+
+when there is a datatype with lower range is passed in the functions argument and the function for particular range doesn't exist, then the function which has the argument of higher range is automatically called, known as automatic promotion.
+
+standard library method
+print() - to print on console 
+
+Math library (no need to import explicitly, it retuns value in double datatype form) 
+Math.sqrt() - to find the squareroot of a no 
+Math.floor() - to find just small no of a given integer.
+Math.ceil() - to fond the no which is just greater than the given no .
+
+
+
+Package 
+
+It is a collection of similar classes,subpackages,interfaces.
+
+Constructor 
+
+Special method to initialze objects.Constructor name = class Name, it has no return type.
+
+types of access Modifiers
+                                       Acessesibility 
+            | within class |  outside class | outside package,non - child | outside package,child
+- Public    |       Yes    |      Yes       |     Yes                     |    yes
+- Protected |       Yes    |      Yes       |      No                     |    yes
+- Default   |       Yes    |      Yes       |      No                     |
+- Private   |       Yes    |       No       |      No                     |    No
+
+
+Method Signature - It is the Name along with its parameter is refferd as Method Signature.
+
+
+Bitwise oprerator - to find new source
+
+Varaible scope - Region from where a variable can be accessed.
+
+Types 
+
+Member Variable - These are class level scope variable and can be accesed all over the class.
+
+Method level Varaible - These can be accessed only within a method.
+
+Block level scope of variable - THese are the variables that are declared inside the pair of brackets  ' { ' and ' } .
+
+
+Array 
+
+Its a data sturucture that stores a collection of homogeneous items. It has o based indexing.It the collection of variables.In java every array is a dynamic array, so every time the array is created in the heap.
+
+
+Representation of array 
+
+datatype [] arrayName =  new datatype[size] ; (Refrence Variabel with assigned contiguous memory in the heap.
+datatype [] arrayName; (Refrence Variable for array)
+
+Array Literal 
+
+with curly braces we can initialize the array and add value to it durin initialization without defining size.
+
+int [] Array = { 1,2,3,4 };
+
+
+Memory allocation in Arrays 
+
+variables refrence is formed in a stack and a single memory is assigned within the heap for a variable.
+
+Arrays are formed in a heap.Where the name of array is a reference variable formed in stack and memory(according to the size assigned) is assigned within a heap.
+
+
+Accessing / Edidting variable in Array
+
+ArrayName [index] = data;
+
+Multi-dimentional Array
+
+datatype [] [] ArrayName = new datatype [row] [coloumn];
+
+using literals
+datatype [] [] Array name = { {val 1, val 2, val 3} ,{val 4,val 5,val 6} ,{val 7,val 8,val 9}};
+
+-Anonymus Array
+When we just pass values of array within a function with allocated memory at time of function call it is reffered to as anonymous array.
+
+Example:
+
+(i) make a function which takes array as an argument.
+sum(int arr[]){
+code
+}
+(ii) call it and pass value like this.
+sum(new int[]{1,2,3});
+NOTE: by the name of argument we can easily traverse the array as well as in coordination of the for each loop.
+
+
+ArrayName.length - It is a property of the array type class.Used to find no of elements within the array.
+string.length() - It is a method of string class.Used to find length of string.
+
+ArrayIndexOutOfBoundsException - If we try to access the index which is not in the array range then it would result in an Exception called "ArrayIndexOutOfBoundsException".
+
+Traversing through Array 
+
+Using loops
+-For loop 
+-For each loop 
+syntax
+for(datatype VariableName : ArrayName to be printed) {
+   System.out.println(VariableName);
+}
+
+Working - We are putting values of each element within the variable VariableName and printing individually)
+ 
+-while loop  
+
+Taking input within the Array
+
+-Using loops and scanner class.
+-for loop
+-while loop
+etc
+
+Note: while working with multiple arrays build a array printing function and use it for multiple arrays.
+
+Disadvantages of Arrays:
+
+-Once we create the size cannot be increased/decreased 
+-It stores only homogeneuous data elements.
+
+
+In order to copy an array
+
+datatype []NewvariableName = PreviousVariableName;
+
+when we do this the heap memory for new array is same as of old array, just a new variable refence is added to the stack and the heap memory is same as of old array.when the change element within the previous/new array change will occur in previous and new array both at the same time known as shallow copy.
+and when we overcome this problem we it is known as deep copy.
+In order to overcome Shallow copy problem we use : -
+- ArrayName.clone(); - It creates a copied array with a new assigned memory within the heap memory along with new refernce varible in stack. It no shallow copy problem.
+
+- Arrays.copyOf(ArrayName,ArrayLengthToBePrintedFrom0Index); - It is a method whitin the java.util.Arrays class which requires two parameters Array name whose copy is to be made along with the length to be copied.Import java.util.Arrays; 
+
+- Arrays.copyOfRange(ArrayName,Staring Index,Ending Index); - same as copyOf but has specified range.
+
+Types of problem
+
+Target sum (use array manupulation technique )
+-swapping technique ( a = x, b = y , let a = a + b = x + y , now b = a - b = x, a = a - b = y )
+-reverse array technique (using swap technique)
+-Rotating an array ( reverse array technique and new array technique )
+- Frequency array technique -  In this we make an array with maximum value index and note the particular frequency of the element at the index, at time of checking availabilty of a particular element.
+
+Note : In array the highest index value is 10 to the power 5.
+
+
+-Strings
+
+Serires of characters enclosed in double courts.It is a inbuilt class in java present in the java.lang package, which need not to be imported to use, cause lang package are imported as default.
+
+
+ 
+Types:
+(i) Immutable(non - changable) - Value cannot be changed once assigned.Can be accompained by string class.It is reffered to as immutable because when we make an string with a value v1 then memory with particular value is assigned into the heap and when we want to make changes within the value v1 then a new memory space is located in the heap and the updated value is assigned to the new memory space but the reference variable still points to the first memory space, so the modification is not reflected back in the reference variable.Memory for static string will be created in SCP(String Constant Pool - It is present is withtin the heap only, which does not allow duplicates[we will have reference to the same memory space with value if two strings are created with same value] and also keeps a reference of the dynamically created string) whereas the dynamic string will be created within the heap and duplicates are allowed(two different strings with same value but different memory alloacation).
+
+Syntax:
+
+String RefenceVaribleName = "value"; // Static creation
+
+String RefenceVaribleName  = new String("value"); // Dynamic creation (memory is used twice, firstly in heap and then in SCP)
+
+-Ways to compare string 
+(a) == method - By the use of equals to operator, we can compare the references of the string.
+(b) string1.equals(string2) - Compares the values of the string.
+
+-Ways to concatinate string
+(a) + operator - Within the SCP process of concatination takes place along with memory allocation and returns the memory address.
+
+(b) string1.concat(string2)  - Retruns an address to the new concatinated string in a new allocated memory in the heap, but the existing reference is not altered.Needs to be stored in a Reference Variable.
+
+-Some basic operations on Strings
+(a) String.toUpperCase(); - Used to convert every letter to uppercase.
+(b) String.toLowerCase(); - Used to convert every letter to uppercase.
+(c) String.length(); - Used to get length of string.
+(d) String.chatAt(index); - Used to get letter at a particular index.
+(e) String.subString(from_Index, End_Index) - Used to get substring from the particular index.
+(f) String.indexOf('char') - Used to get index of particular character in a string.
+(g) String.lastIndexOf('char') - Used to get last index of a repeated character within an string.
+(h) String.split('char') - Returns an string array with spillted form of string from th given character and stored in an string array from 0 index.
+(i)string.replace(char1, char2) - return & Replaces all the characters of same type of char1 with char2 in a string.
+(j)string.toCharArray() - Retruns an character type array of the string.
+
+(ii) Mutable String(changeable) - Value can be changed after assignement.Can be accompained by use of stringbuffer or stringbuilder.It is reffered to as mutable because when we assign value in the object of stringbuilder or stringbuffer then it is alloted to a memory space in the heap and when we do a modification then the value is updated within the particular heap memory where the previous memory was, thus the value is pointed to the reference variable , therefore the value is reflected.
+
+(a) StringBuilder ReferenceName = new StringBuilder("string"); (value can be passed through the constructer, value of  16 bit is provided by default and increased twice if exceeds,It is not synchronized,Multithreading is possible.)
+
+(b) StringBuffer ReferenceName = new StringBuffer("string");(value can be passed through the constructer, value of string + 16 bits is provided by default and increased twice if exceeds, It is synchronized.Multithreading is not possible.)
+
+NOTE: If we pass int value in constructor then it will assign that amount of memory.
+
+
+-Final Keyword :- If a variable or string is made final then its value cannot be changed or modified through out the program.when it is applied with a class then it cannot be inherited. If it is inherited with method it is cannot be overriden within the inherted class.
+
+Syntax
+
+final int a = 10;
+
+-Static Keyword
+
+It is mainly used for memory management.It can be applied with variables, methods, blocks and class. 
+
+-Static Variable
+As we know that value of instance variabel is different for different objects.If a same value of variable is shared by every object of a class, then we use static with a variable,it is initialised once when object is created and since if the value is changed then the value is shared by every newly created objects.Its value remains same for every class, so it can be called by the help of class name( className.staticVariableName).
+
+Syntax:
+
+static DataType VariableName;
+
+-Static Method
+Same things goes on for staic method.
+
+Syntax
+accessSpecifier static returnType FunctionName(){
+//code
+}
+
+-Static Block 
+
+It is just a Block of code as an if the class is loaded into the memory(within the static block), there is no creation of object , or even if it is not called by use of class or object.Real time use - Creation of link with server before an application starts.
+
+NOTE: We cannot access a non - static variable in a static method, but we can access static variable inside a non - static method.
+
+-Encapsulation(Data Hiding + Data Abstraction)
+
+Every object knows something(properties, Attributes, Variables) and does something(methods, functions). To the outside world, the data should not be exposed directly. In order to provide the controlled access, we need to use "Encapsulation".
+
+Binding of data and corresponding methods into a single unit is called as Encapsulation.
+
+Basically we implement it by the use of private keyword with variables, methods, class.
+
+when we make variables private keyword we can make use of getters and setters in order to set the value of the objects.
+
+
+This Keyword
+
+when we have a local variable with same name as that of local variable, and when we change the value of variable , then the value change of the local variable would preffered according to scope resolution, but if we want to change the instance variable value then we have to use this keyword.
+
+syntax
+
+this -> variableName = value;
+
+
+-Setters & Getters
+
+These are standard methods which are used to set value of private variable outside the class.
+
+Syntax
+Setters:
+
+public void setVariableName(variableDatatype variableName){
+	this -> variableName = variableName;
+	}
+
+Getters:
+
+public DataTypeOfVariable getVariableName(){
+		return variableName;
+	}
+
+NOTE : Use source action generate getters and setters.
+
+
+
+Constructors : It is special type of function/setter with same name as that of a class and has no return type. It is basically used to set the value of private variable at time of object creation, in place of using setters.
+					  If we do not explicitly define any constructor java compiler automatically specifies a default constructor(0 parameterized).
+
+It can be overloaded.
+
+
+
+Syntax:
+
+(i) create constructor in class
+ClassName(argument){
+	//code
+}
+
+(ii) At time of object creation initialize value.
+	ClassName obj = new ClassName(value);
+
+
+this(parameter) - It is used to call constructor within a same class, according to same parameter in case of the constructor oveloading form a constructor to other.
+
+super() - Used to call constructor of parent class.
+
+
+-Inheritance 
+
+The process of inheriting(Reusing the code) the properties(Attritbutes and methods) of class by the use of extend method.Variables with private access specifier doesnt participate in inheritance.
+
+Syntax:
+
+class ChildClassName extends ParentClassName{
+}
+
+NOTE: By default every class inherits the object class, and when we explicitly inherit a class then the particular class inherits the particular class only.
+
+- Types of Inheritance
+
+(i) Single - level inheritance - When a single class inherits the parent class.
+
+				class a
+				   | inherited
+				class b
+(ii) Multi - level inheritance - When a inheritance is done at multiple levels.
+							
+				class a
+				   | inherited
+				class b
+				   | inherited 
+				class c
+(iii) Hierarchical inheritance - When one parent class has multiple child classes.
+
+				class a
+				    | inherited 
+			-----------------------
+		        |           |         |
+		     class b     class c    class d
+(iv) Multiple inheritance - When one class inherits two parents classes.It is not allowed in java, because it leads to ambiguity to the compiler.
+
+- Types of methods
+
+(i) Inherited - Functions with no modification within the inherited class.
+(ii) Overriden - When function with same name and arguments as well as with same or more visible access modifier(We cannot reduce the visibility but we can increase visibility), code is edited within the inherited class.
+(iii) Specialized - Newly declared and implemented methods within the inherited within the class.
+
+-Package and Access modifiers
+
+Package - These are like folders in which the code is stored. At times of project modulation these are used.
+
+Syntax
+package Java.Package_Name;
+
+Types of Access Modifiers:
+(i) public - Any class, variable, constructor, outside package it can be accesed. 
+(ii) protected - Outside package no access, without inheritance 
+(iii) default - Within the same package.
+(iv) private  - Only within the class.
+
+Note: A class member declared protected becomes a member of a subclass of private member.
+-Runtime vs Compile time polymorphism
+
+method overloading (Compile time poly)
+The process of extending the existing method functionality with new functionality. 
+
+method overriding (Runtime poly)
+The process of replacing existing method functionality with new functionality.
+
+with or without inhertance we can perform method overloading with inhertance only we can perform method overriding.
+
+Note : Reference variable of base class can store the pointer to inherted class.
+
+-Abstract Keyword
+
+The way of hiding implementation data and showing the function, the implementation is done within the inherited class.
+
+We can obtain abstraction by use of abstract keyword( abstract method, class).
+A class with abstract method is reffered to as abstract class.
+
+
+Syntax :
+
+abstract class aL{
+abstract void method();
+}
+
+Note: Abstract class can have abstract method and concrete method(methods with defination) also and inherited class must define the method.Here we dont achieve 100% abstraction, as well as we cannot create object of abstract class(because it has methods with no body, so it is a incomplete class).In order to achieve 100% abstraction we use interface.
+
+
+composition involves a class containing objects of other classes as data members.
+
+
+Association, if an object has its own lifecycle and there is no owner
+
+
+
+-Interface 
+
+It is a class which contains only abstract methods and variables which are public static final by deafult , whereas methods are public and abstract, and cannot have constructor.
+It enables us to do multiple inheritance.One interface cant implement another interface but can extend another interface.
+Syntax 
+
+interface className{
+// methods and varibles.
+}
+
+class b implements className{
+}
+
+Types:
+(i) Single abstract (Functional interface) - contains Only one method.
+(ii) Normal - Multiple methods.
+(iii) Marker - Interface with no methods.
+when we want a method to be defined by the inherited class, so we use interface, similarly at time of accessing we can make the reference variable of the abstract class and refer to the object of any of its implemented classes.
+
+Java 8 features:
+(i) Default methods in interfaces. - By use of default access specifier within the interface and define it there and all the classes which implement can be call the method by the help of their object.
+
+(ii) Static methods in interfaces.
+(iii) Functional interfaces. - write @FunctionalInterface after package before interface declaration, which would ensure that the interface cannot have two methods or more than one method.
+
+
+-Inner class
+
+Class within a class is known as inner class.In order to refer the members of inner class we need to create object with reference to main class.
+
+classAobj.classb obj = new classAobj.classb();
+
+classAobj.obj.func();
+
+-Anonymus class
+
+we can create the object of interface and at time of creation instead of semi - colon we could directly give parenthesis and within the parenthesis we can define the function.
+
+interfaceName obj = new interfaceName(){
+ public returntype declaredFunc(){
+//code
+}
+}
+
+Note : It is reffered to as anonymus class.
+
+- Lamda Expression
+Used to implement of functional interface.Less no lines of code.
+(parameter - list) -> {body}
+
+It has three components:
+
+(i) Argument list : It can be empty or non - empty as well.
+(ii) Arrow - token - It is used to link arguments - list and body of expression.
+(iii) Body - It contains expressions and statements for lambda expression.
+
+
+interfaceName obj = (parameter) -> { //code };
+
+Note: Curly braces is must at time of return from the function.It return type is function.
+
+
+-Exception Handling 
+
+Types of Errors:
+
+(i) Syntax Error
+(ii) Logical Error
+(iii) Runtime Error
+
+In order to stop the program from crashing in between the execution, we handle the exception by the use of Try - catch method.
+
+Syntax:
+
+try{ //try block and do refer to try with resources.
+//code which could throw an error
+}
+
+catch(ExceptionTypeToBeCatched  ReferenceVariable){ // Use Exception e as argument to handle any Exception.
+// Handle the exception 
+}
+
+Some of known Exception:
+(i) Arithematic Exception
+(ii) ArrayIndexOutOfBounds Exception
+
+Finally Block - It is a block which is written after try and catch block , and the code within the block is executed whether the exception is handled or not.
+
+Syntax:
+
+try{ //try block
+//code which could throw an error
+}
+
+catch(ExceptionTypeToBeCatched  ReferenceVariable){ // it can or cannot be present handle any Exception.
+// Handle the exception 
+}
+
+finally{
+//code 
+}
+
+
+-Ducking 
+
+The process of throwing an exception by the use of throws keyword.
+
+void method() throws Exception{
+//code
+}
+
+The function which calls the function handles the exception.
+
+
+-Throw Keyword
+
+It is used to throw a custom exception, it throws an exception of Exception class.
+
+Syntax:
+
+try{
+Exception e = new TypeOfException("message"); //for general exception we use Exception and for particular the particular classes( Ex - ArithmaticException)
+throw e;
+}
+
+Note: In order to create a custom Exception we need to create a class  which extends the Exception class.
+
+Syntax :
+
+class a extends Exception{
+	a (argument){ // by the use of constructor we can pass message to the Exception class overloaded constructor.
+	super(argument);
+}
+}
+
+-Multithreading 
+
+Task - Activity/ Piece of work.
+
+Multitasking - Multiple tasks at a time.
+
+Type :
+(i) Process based.(os level, multiple applications running at a time)
+(ii) Thread based.(within the application we can perform multiple tasks)
+
+Thread - Line of execution.A Thread is a very light - weighted process, or we can say the smallest part of the process that allows a program to operate more efficiently by running tasks simultaneously.
+
+Default Thread present in java provided by the JVM known as main thread.
+Inbuilt class Thread class is there with inbulit function used to create threads.
+
+some inbuilt functions:
+.currentThread(); - Used to get reference of current thread.
+.getName(); - Used to get the name of the thread.
+.getPriority(); - Used to get priority of the thread.
+.setName("name");  - Used to set the name of the thread.
+.setPriority(); - Used to set priority of the thread.
+
+ways to create a thread:
+(i)By extending the Thread class.
+(ii)By implementing Runnable interface.
+
+Runnable interface : It is an interface which has a public abstract void run and there is an inbuilt class known as Thread Class which implements the Runnable interface and run method body is defined within the Thread class.
+
+Way to create own Thread(extending Thread class):
+
+(i) Write the task within a class and extend the Thread class.
+(ii) override the public void run() function.
+(iii) In order to run the Thread ,make an object of class with the reference of Thread class.
+Thread t = new className();
+(iv) In order to execute the code within the run block call the start method present in Thread class, by the object reference.run method cant be called directly, by the Thread Schedular within the JVM.
+t.start(); - It hands over the user created thread to the thread scheduler, which runs the thread as per its analytics, in order to utilize the cpu time cycle.
+
+Way to create own Thread(implementing Runnable interface):
+
+(i) Write the task within a class and implement the Runnable interface.
+(ii) override the public void run() function.
+(iii) Create object of thread class and pass the object of class whose thread needs to be runned within the constructor.
+ classA obj = new classA();
+ Thread obj = new Thread(obj);
+
+(iv) In order to execute the code within the run block call the start method present in Thread class, by the object reference.run method cant be called directly, by the Thread Schedular within the JVM.
+obj.start()
+
+States of a thread:
+(i) New - create a thread.
+(ii) Runnable - Starting the thread by handling the thread to the thread schedular.
+(iii) Running - Cpu time alloted by the thread schedular.
+(iv) Blocked(Non - runnable state) - During running it encounters sleep, wait or suspend method goes into waiting or block state.
+(v) Dead -  Once the task is over.
+
+
+Some methods
+
+.join() - It makes the other Threads to wait until the threads work is completed and joins back and other threads in queue is completed.
+
+.isAlive() - Used to check whether the thread is Running or not, it is to ensure that thread has life.It is not alive before running and after creation.
+
+.interrupt() - If the thread is in waiting state we can throw an exception in order to use the cpu time cycle.
+
+- Synchronization
+
+Single Resource but multiple users.
+
+If we have multiple threads of same class and they are started at once there is race situation every thread would execute once the it gets the cpu time cycle.
+
+But we solve the the problem by the use of synchronized keyword, which restricts to one thread can access the resource(run method) at once.
+
+Syntax:
+
+class a extends Thread{
+synchronized public void run(){
+//code
+}
+}
+
+
+similarly we can use synchronised block for implementing particular part of run one by one.
+
+Syntax:
+
+synchronized(this) {
+//code
+}
+
+- Dead Lock
+ When more than one thread is permanetly stuck in the block state,due to mutual dependency.  
+
+
+-Collection Framework 
+
+The Collection in Java is a framework that provides an architecture to store and manipulate the group of objects.
+
+Java Collections can achieve all the operations that you perform on a data such as searching, sorting, insertion, manipulation, and deletion.
+
+We can add Homogenous and Heterogenious type of data within the Structures.
+
+-Collection Hierarchy
+				
+					Iterable interface
+					    |
+					Collection interface
+					    |
+		
+		         | -----------------|-----------------|
+                 List interface     Queue interface      Set interface
+			|                   |                 |
+		   ArrayList           PriorityQueue       HashSet
+		  LinkedList 				   SortedSet
+		    Vector                                 LinkedHashSet
+		    Stack                                  Tree Set
+
+
+(i) Array List - Basically  a dynamic array. In order to use the class we need to create the object.Every object added is considered as an object.It preserves the order of insertion.
+Syntax:
+
+ArrayList Name = new ArrayList();
+
+methods :
+(i) Name.add(); - Used to add elements to the ArrayList.
+(ii) Name.addAll(ArrayListName); - Used to add the elements of one array List to other Array List.
+
+(iii) Name.add(index, element); - used to add element at a particular index within the arrayList.
+
+
+
+(ii)Linked List - It is a class in java which is part of collection framwork which implements two interface List interface and Deque interface, which can store heterogenous data. It internally follows Doubly LinkedList, data is stores in form of nodes.
+
+Syntax:
+
+LinkedList Name = new LinkedList();
+
+methods :
+(i) Name.add(); - Used to add elements to the ArrayList.
+(ii) Name.addAll(ArrayListName); - Used to add the elements of one array List to other Array List.
+(iii) Name.poll() - Returns the top elements as well as removes it.
+
+
+(iii) ArrayDeque - It is a class in java which is part of collection framework which implements the Double ended Queue(insertion and Deletion at front end and rear end).Index based indexing is not allowed.It stores heterogenous type of data.
+
+Syntax:
+
+ArrayDeque array = new ArrayDeque();
+
+(iii) Priority Queue -  It is a class in java which is part of collection framework which implements Min - heap DS.Index based indexing is not allowed.Insetion is allowed at end and deletion is allowed from the front.It does not maintain order of insertion.It can store homogenous Data.
+
+Syntax:
+
+PriorityQueue array = new PriorityQueue();
+
+
+(iv) TreeSet -  It is a class in java which is part of collection framework which implements sorted set interface, it follws binary serach tree.It stores data in sorted order.Dulplicates are not allowed.
+
+Syntax:
+
+TreeSet array = new TreeSet();
+
+(v) HashSet - Internally it follows the HashTable.Order of insertion is not maintained.Duplicates are no allowed.
+
+(vi) LinkedHashSet - It follows Hashtable and Linked List, thus preserving the order of insertion.Duplicates are no allowed.
+
+
+- Iterators and List iterators
+
+The way of Fetching data which can be done by the iterator. As we know that index based accessing is not possible in some data Structures.
+
+Syntax:
+
+Iterator itr = ReferenceNameOfDataStructure.iterator();
+
+while(itr.hasNext()){ // Checks whether DS has next data.
+ itr.next(); // returns next element 
+}
+
+-ListIterator
+
+Used for list interface classes, with a advantage to traverse in reverse order.
+
+Syntax:
+
+ListIterator itr = ReferenceNameOfDataStructure.listIterator();
+
+while(itr.hasPrevious()){ // Checks whether DS has Previous data.
+ itr.previous(); // returns next element 
+}
+
+Note: We should use iterators more instead of loops at time of fetching data from the Data Structure because if we try to add or modify the Data structure at time of data fetching(concurrent modification) it would lead to infinite loop but instead if we use iterators we would get concurrent Exception Reffered to as failfast() , and when we want to handle the exception we will import the concurrent class , and create an ArrayList object like : CopyOnWriteDataStructureName arr = new CopyOnWriteDataStructureName();
+
+and fill elements in this.
+
+It will run the program smoothly without any Exception, the modification will not be applied.
+
+
+-Map
+
+It is an interface in which the way of storing data in a key - Value pair(known as entry),Where data can be same but the key needs to be unique present in the util package.
+
+(i) HashTable  - Cannot store Null values.
+(ii) HashMap - We can add NULL key as well as value.Order of insertion is not preserved.
+
+Syntax:
+HashMap map = new HashMap();
+
+methods:
+(i) map.put(key, value);
+
+Accessing Data
+(ii)map.get(key);
+
+Accessing the whole data in the Map
+
+-By the use of iterator
+
+.entrySet() - Returns a set of key - value pair.
+
+
+
+(iii) LinkedHashMap - Order of insertion is preserved.
+Syntax:
+LinkedHashMap map = new LinkedHashMap();
+
+
+(iv) TreeMap 
+
+-Generics 
+
+As we know that we can store heterogenous type of data in various classes of the collection framework, but in order to make it homogenous by applying strict type checking we use generics, and store similar type of data, and shows compile time error. It is implemented using type parameters which are specified inside angle brackets <>.
+
+Similar to templates in c++.
+
+Note: It does not takes primitive datatype instead works on objects.
+
+Syntax:
+
+ArrayList<String> a = new ArratList<String>();
+
+(ii) User Defined generics
+
+className<GenericName>{
+	GenericName variable;
+
+}
+
+at time of object creation we specify the datatype.
+
+
+Collections and Collection
+
+Collection - It is an interface.
+
+Collections - It is an inbuilt class, which is used to perform operations on the collections withing the collection Data.All the functions are static within the class.
+
+(i) Collections.sort(collection);
+
+-Comprable and Comparator Interface
+
+They are functional interface.
+
+-Important API
+
+(i) Date and Time 
+Present in util package(Java opertions)/ sql package(DataBase 
+operations)
+Date class - Object gives Date and time.
+Syntax:
+
+(i) import util class.'
+(ii) create Date class object.
+
+Date obj = new Date();
+sysout(obj);
+
+Time package - Joda company provided a package for efficient Date and time operations.We need not to create object but instead we just need to use now function to create an object.
+
+(ii) Stream 
+When we are working with Collection Framework and when we want to do some operations on the data without affecting the original data we create another API. It is like dummy for the original data and we cannot  perform a more than one operation on same stream, but we can do method chaining.
+
+(iii) Enums
+Predefined Group of constants(Written in Capital Case),by deafult public static final and can be accessed by their name, which extends the enum class.
+
+(iv) Annotation
+If we want to pass an information to the compiler as for example like overriding an function, it maintains meta data(information about the code) about the code. It is represented with @ and helps debug at compile time present in lang package. e.g. @Override, @Depricated, @FunctionalInterface
+
+Types:
+(i) Standard(Built.in) Annotations - @Override, @Depricated, @safevarArgs, @suppressWarnings , @FuntionalInterface
+(ii) Custom Annotations - @inherited, @Documented, @Target, @Retention, @Repetable 
+Syntax:
+
+@Target(ElementType)
+@Retention(Its Scope)
+@interface AnnotationName{
+	// we can declare variables and at time of Annoting within small brackets.
+	int a() default 4; // the default is not neccessary.
+}
+
+(v) Reflection API
+
+Used to get values of  variabels within the annotation.
+
+-IO stream(File Handling)
+
+Within the io package we have options to work with the text file in order to write, append or read from a txt file.
+
+-Ways to create directory/folder
+
+File dr = new File("Aman");
+dr.mkdir();
+
+It will create a directory of the name of Aman.
+
+-Ways to create a file
+
+File file = new File("Aman.txt");
+file.createNewFile();
+
+It will make a .txt file of the name of Aman.
+
+- Way to create a file within a directory
+
+File file = new File(dir, "aman.txt");
+file.createNewFile();
+
+It will create a new file within the directory.
+
+-Way to write within a file 
+(i) Create a file using above steps.
+(ii) Create an object of FileWriter class and pass the file into its constructor.
+
+FileWriter file1 = new FileWriter(file);
+
+file.write(data in int);
+
+cons: It takes data in form of integer as well as one by one(character by character) and at time of readig we need to typecast it to the original datatype.
+
+-Buffered Writer 
+
+It is like a motor to the pipe with water, in other words we can say that it allows us to pass data in form of string to the file within a line, not individually as characters.
+
+Syntax:
+
+(i) Create file as well as object of FileWriter.
+(ii)Pass the object of the file writer to the constructor of Buffered Writer object.
+
+BufferedWriter obj = new BufferedWriter(FileWriterObject);
+
+
+-PrintWriter 
+
+It is a stream which takes any type of datatype as input for printing it as it is within a file.It writes within the file at once.
+
+Syntax:
+
+(i)Create a file and an object of File Writer.
+(ii) Pass the object within the constructor of the PrintWriter object.
+
+use obj.print("to write");
+
+-Ways to read from a file
+
+-FileReader 
+
+It is a stream which is used to read data from a file and reads each character one by one.
+
+Syntax:
+
+(i) Open the directory as well as file.
+(ii) Create an object of FileReader within the constructor pass the file opened object.
+
+FileReader fd = new FileReader("objectOfFileOpened);
+
+By the use of fd.read() function which would act like a pointer at the starting index of the file would return each character of the file and would return -1 when at the end.
+
+-Buffered Reader 
+
+Similar of FileReader but reads a line at once and thus gives us the data from the output.
+
+Syntax:
+
+(i) Open the file and create an object of File Reader as above.
+(ii) Pass the object of the File Reader class within the constructor of the Buffered Reader object.
+
+BufferedReader fr = new BufferedReader("FileReaderObject");
+
+use fr.readline() to read lines from the txt file.
+
+
+-Way to store object within a .txt file
+
+Serialization - The process of storing object within a text file in fragmented and Encrypyted manner(in form of bytes) by the implemenation of Serializable interface is reffered to as serialization.
+
+Syntax:
+(i) Implement Seriazable interface whose object needs to be stored.
+(ii) Make an object of FileOutputStream, which would make a file to store object.
+	FileOutputStream fos = new FileOutputStream("fileName");
+(iii) Make an object of ObjectOutputStream and pass object of FileOutputStream object into its constructor.
+	ObjectOutputStream oos = new ObjectOutputStream(fos);
+Use oos.writeObjet(oos); function to write the object with the file.
+
+
+-Way to read a object from a .txt file
+
+Deserialization - The process of reading the Encrypted object stored within a txt file within the program is reffered to as Deserialization.
+
+Syntax:
+
+(i) Create an object of FileInputStream and pass the file name having the object data within its constructor.
+	FileInputStream fis = new FileInputStream("fileName");
+(ii) Create an object of ObjectInputStream and pass the object of FileInputStream into its constructor.
+	ObjectInputStream oi = new ObjectInputStream(fis);
+Use the function oi.readObject() which would return an object of object class downcast it to object of the particular class and store within a reference variable.
+
+
+-Way to suspend particular Data Members of a file to a .txt file
+
+By the use of Transient Keyword we can suspend the storage of particular data members within a txt file at time of storing object within a txt file.
+
+
+
+
+
+
+
+
+

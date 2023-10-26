@@ -1,0 +1,10 @@
+
+
+-compiler and memory mangement in depth
+-buffer reader
+
+-bitwise operator
+-thread
+-hashcode 
+-equals method 
+-comparator and comparable interfaces

@@ -1,0 +1,13 @@
+(i) All possible combinations of increment/ decrement operators.
+
+-(i) Two/ Three / N pointer apporach
+(ii) Sliding Window 
+(iii) Binary Search (Range ka khela, Exponetial Search)
+(iv) Row/Coloumn maths (+, -, /, *, %)
+(v) Recursion (Faith - Expectation, Level - option, marking method)
+(vi) OOPS (Linked List, Stack, Queues) 
+(vii) Sorting Techniques & sorting Question Maupulation
+(viii) Maths Techniques for Question Maupulation (digits, Euler Tree) 
+
+
+Pw stl questions
