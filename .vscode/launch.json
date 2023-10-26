@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "calc",
+            "request": "launch",
+            "mainClass": "Java.Basic.calc",
+            "projectName": "Vs Code_4265e491"
+        },
+        {
+            "type": "java",
+            "name": "tempRun",
+            "request": "launch",
+            "mainClass": "Java.Basic.tempRun",
+            "projectName": "Vs Code_4265e491"
+        },
+        {
+            "type": "java",
             "name": "Stair",
             "request": "launch",
             "mainClass": "Java.DSA.Recursion.Stair",
