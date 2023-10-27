@@ -1,0 +1,836 @@
+In order to solve any Problem using Computer Science we need to go through the Following Four subareas :
+
+(i) Machines : Type of Machine we need.
+(ii) Language : Which lang is efficent for solving the problem
+(iii) Foundations : We design the model and Methodology for solving the problem.
+(iv) Technologies : We implement the methdology by the proper use of machniries.
+
+Algorithm : Process or Procedure or method or recipe.
+
+Data structures : The study of methods, Techniques and tools to organize or structure data.
+
+Structure of Algorithm : 
+(i) Input step 
+(ii) Asssignment Step 
+(iii) Decision Step 
+(iv) Repetative Step 
+(v) Output Step
+
+Properties of Algorithm :
+(i) Finiteness - Should Terminate after no of steps.
+(ii) Definiteness - Steps should be unambiguosly specified.
+(iii) Generality -  Generic
+(iv)Effectiveness - Operations within should be not complex
+(v) Input - Output  - Should have some intitial input and output.
+
+Program - An algorithm encoded in a programming language for implementation on a computer.
+
+Note : Operating System is a Infinte Program.
+
+Steps Involved in Development of an algorithm :
+
+(i) Problem Statement 
+(ii) Model Formulation
+(iii) Algorithm Design 
+(iv) Algorithm correctness
+(v) Implementation
+(vi) Algorithm Analysis
+(vii) Program testing
+(viii) Documentaion
+
+-Data Objects - A list of elements is called as a data object. Ex - Set of Intergers basically a set in maths, containing things of similar type or characteristics.
+
+-Abstract Data Types - The data objects which comprise the data structure, and their fundamental operations are known as Abstract Data Type (ADT). In other words, an ADT is defined as a set of data objects,D defined over a domain L and supporting a list of operations O. Similar concept to Algebric Structures within discrete Matematics.
+
+-Data Strctures 
+
+Types :
+(i) Linear -  Uni Dimensional -> Sequential & Linked
+(ii) Non - Linear - Two Dimensional 
+ 
+Efficiency of an algorithm -  It is measured on the scales of Time and Space. The least time the algorithm took as well as the least amount of space it took to run is reffered to as more efficient program.
+
+Time Complexity - The time complexity of an algorithm or a program is a function of the running time of the algorithm or program.It can be calculated in two ways :
+
+(i) Empirical or Posteriori testing : Approach calls for implementing the complete algorithms and executing them on a computer for various instances of the problem. The time taken by the execution of the programs for various instances of the problem are noted and compared. It is dependent on various other factors such as the machine on which the program is executed, the programming language with which it is implemented the advantage of apriori analysis is that it is entirely machine, language and program independent.
+
+(ii)Theoretical or Apriori : Approach calls for mathematically determining the resources such as time and space needed by the algorithm, as a function of a parameter related to the instances of the problem considered.The number of times the statement is executed in the program, known as the Frequency count,computes the efficiency of the program as a function of the total frequency count of the statements comprising the program.It is in the form of Functions of time or space.
+
+Steps to calculate Time complexity
+(i) Calculate frequency count for each statement.
+(ii) Sum the frequency count of each statement.
+(ii) Neglect the constant terms and the Polynomial with highest degree is considered as the time complexity.
+
+Steps to calculate Space complexity
+(i) Consider the individual variables in the statement.
+(ii) Calulate the no of times the variable is initialized and created.
+(ii) Neglect the constant terms and the Polynomial with highest degree is considered as the space complexity.
+
+NOTE :
+(i)Whatever is inside a loop executes the no of times - 1 of the loop executes. 
+(ii) Work = Time * Efficiency (connect it with Loop Working )
+(iii) Write down initial working steps of the program, then analyze on the conditions present.
+
+(iv)if Incrementing in multiple - Log n (log n to base x  = y , means x * y = n)
+       Incrementing depending on other variable - root n
+(v)Always consider the worst case in case of conditional statement to be executed while calculating complexity.
+(vi) Always consider the upper bound of the Loop, then solve.
+
+Types of Time functions
+
+o(1) - Constant
+o(log n) - Logrithmic 
+o(n) - Linear
+o(n ^2) - Quadratic 
+o(n ^3) - Cubic 
+o(2 ^n), o(3 ^n) , o(n ^n) - Exponential
+
+ WHEIGHTAGE of Time Functions : 
+1 < log n < root n < n ^2 < n^2 log n < n ^3 < ...< 2 ^n < 3 ^n <...< n ^n 
+NOTE : n! cant have a fixed place, similarly for log n! we use upper bound and lower bounds, where we know the highest or lowest value.
+
+-Asymptotic Notation - Apriori analysis employs the following notations to express the time complexity of algorithms.
+
+(i) O (big - oh) - Upper Bound  - The function f(n) = O(g(n)) iff ∃ +ve constant c and n* such that f(n) <=  c * g(n) ∀  n >= n*.
+			ex - f(n) = 2n + 3 
+			     2n + 3 <= 5n  ( 5 = c, g(n) = n)
+			    f(n) = O(n)
+NOTE: Use closest time functions.
+(ii) Ω (big - omega - Lower Bound - The function f(n) = Ω (g(n)) iff ∃ +ve constant c and n* such that f(n) >=  c * g(n) ∀  n >= n*. 
+                        ex - f(n) = 2n + 3 
+			     2n + 3 >= 1n  ( 1 = c, g(n) = n)
+			     f(n) = Ω(n)
+(iii)θ (Theta) - Average Bound - The function f(n) = θ(g(n)) iff  ∃ +ve constant c1,c2, and n* such that c1 * g(n) <= f(n) <= c2 * g(n).
+                       ex - f(n) = 2n + 3 
+			    n <= 2n + 3 >= 5n (c1 = 1, c2 = 5 , n* = n)
+
+
+Properties :
+
+(i) If f(n) = O(g(x)), Ω (g(n)), θ(g(n)) , then a * f(n) is also O(g(x)), Ω (g(n)),θ(g(n)).
+(ii) Reflexive - If  is given that then f(n) is O(f(n)).
+(iii) Transitive - If f(n) = O(g(n)) and g(n) is O(h(n) then f(n) = O(h(n)).
+(iv) Symmetric - If f(n) is θ(g(n)) then g(n) is θ(f(n)).
+(v) If f(n) = O(g(n)) then g(n) is Ω (f(n)).
+(vi) If f(n) = O(g(n)) and f(n) = Ω (g(n)) then g(n) <= f(n) <= g(n) , so f(n) = θ(g(n)).
+(vii) If f(n) = O(g(n)) and d(n) = O(e(n)) , then f(n) + d(n) = O[max g(n), e(n)].
+(viii)  If f(n) = O(g(n)) and d(n) = O(e(n)) , then f(n) * d(n) = O[g(n) * e(n)].
+
+NOte: log ab = log a + log b
+      log a/b = log a - log b 
+      log a ^b = b log a
+      a ^ log b base c = b ^ log a base c
+      a ^ b = n then b = log n to base a
+	If you compare two functions directly you can neglect the constants, but if you apply log in order to compare we need to compare including the constants.
+
+Best case - Searching key element present at first index.
+Average case - All posssible case time/no. of cases.
+Worst case - Searching key element present at last index.
+
+-Divide and Conquer 
+
+It is a statergy in which the Bigger Problem is broken down into small sub Problems of same type and the smaller sub problems are solved and their combined Result is the solution of the Bigger Problem.
+	It is also refferd to as Recusively solving the Problem, by the use of Recurance Relation.
+
+Steps to calc Recurance Relation:
+
+(i)Assume the Time complexity of the Function is T(n).
+(ii) Calculate the frequency count of each statement in the function.
+(iii) The recursive call would take T(given argument) time.
+(iv) The recurance relation is the T(n) = Sum of all statements time taken within the Function.
+(v) Compare the relation with fluctuating value of the aregument  or calc Time complexity through Recursive tree.
+(vi) By the use of the substitution, find values of T(n) for intial terms in oreder to find a generalized Equation, hit the equation with base case.
+(vii) Find the value of n , thus the time complexity.
+
+Example :
+
+(i) Void Test(int n){  // Assume Time complexity to be T(n) (usually for Reccurance func)
+	if(n > 0){	
+	  cout << n;   // Time complexity is 1.
+	  Test(n -1);  // Time complexity is T(n-1).
+	}              // -------------------
+      }                // Total Time taken(Reccurance Relation): T(n) = T(n-1) + 1
+
+	(a)Reccurance/Tracing Tree:
+		 Test(3)
+		   | 
+             --------------
+             |            |
+	     3          Test(2) 
+			   | 
+                     --------------
+                     |            |
+                     2          Test(1)
+                                  | 
+                            -------------- 
+                            |            |
+			    3          Test(0)
+                                         | 
+                                         X
+                               -----------------------
+                                  Total 3 + 1 calls
+		                        n + 1 calls 
+				        so O(n) is time complexity
+
+          (b) By the Induction/Substitiution Method 
+ 		__________________
+	        | 1         n = 0
+         T(n) = |
+		| T(n-1)+1  n > 0
+                -----------------
+	
+	 T(n) = T(n - 1) + 1
+	 Substitute T(n - 1)
+	 T(n) = T(n - 2) + 2   (T(n) = T(n - 1) + 1 ,  T(n-1) = T(n-2) +1 , so T(n - 2) = T(n-3) + 1)
+	 T(n) = T(n - 3) + 3
+                   |
+                   |continue for k
+         T(n) = T(n - k) + k 
+	 Assume n - k = 0 , n = k.
+	T(n) = T(0) + n
+	T(n) = 1 + n 
+	Time complexity = O(n).
+
+(ii) Void Test( int n){   // Assume Time complexity to be T(n) (usually for Reccurance func)
+	if ( n > 0 ){
+	for( i = 0; i < n ; i++){ // Time complexity is n.
+		cout << n;        // Time complexity is 1.
+		}
+		Test(n-1);        // Time complexity is T(n - 1).
+	}                        // -------------------
+      }     // Total Time taken(Reccurance Relation): T(n) = T(n-1) + 2n + 2
+							            --------
+								(Round off to asymtotic notaion)
+
+             T(n) = T(n-1) + n
+
+
+        (a)Reccurance/Tracing Tree:
+		 Test(n)              ------------------ n
+		   | 
+             --------------
+             |            |
+	     n          Test(n - 1)     ------------------ n - 1 
+			   | 
+                     --------------
+                     |            |
+                   n - 1       Test(n - 2)        ------------------ n - 2 
+                                  | 
+                            -------------- 
+                            |            |
+			  n - 2       Test(n - 3)     ------------------ n - 3
+                                         | 
+                                   -------------- 
+                                   |            |
+			          n - 3    Test(n - 4)    ------------------ n  - 4
+                                                | 
+                                 		|
+                                                |
+                                             Test(2)          ------------------ 2
+                                                | 
+                                          -------------- 
+                                          |            |
+			                  2         Test(1)       ------------------ 1
+                                                       | 
+                                                 -------------- 
+                                                 |            |
+			                         1         Test(0)      ----------------0
+                                                              | 
+                                                              X
+                                                   -----------------------
+                                                   Total: n + (n - 1) + (n - 2) .. = n ( n + 1) / 2
+				                    so O(n ^ 2) is time complexity.
+
+  		(b) By the Substitiution Method 
+ 		__________________
+	        | 1         n = 0
+         T(n) = |
+		| T(n-1)+n  n > 0
+                ----------------- 
+
+		T(n) = T(n-1) + n
+		Substitute T(n - 1)
+	 T(n) = [T(n - 2) + (n - 1)] + n
+ { T(n) = T(n - 1) + n ,  T(n-1) = T(n-2) + (n -1) , so T(n - 2) = T(n-3) + (n - 3)}
+	 T(n) = T(n - 3) + (n -2) + (n - 1) + n
+                   |
+                   |continue for k
+         T(n) = T(n - k) + (n -(k - 1)) + (n -(k - 2) + .... + (n - 1) + n 
+	 Assume n - k = 0 , n = k.
+	 T(n) = T(0) + 1 + 2 + 3  + ... + (n -1) + n
+	 T(n) = n(n + 1)/2 
+	 Time complexity = O(n ^ 2).
+
+(iii) Void Test( int n){   // Assume Time complexity to be T(n) (usually for Reccurance func)
+	if ( n > 0 ){
+	for( i = 0; i < n ; i = i * 2){ // Time complexity is log n.
+		cout << n;        // Time complexity is 1.
+		}
+		Test(n-1);        // Time complexity is T(n - 1).
+	}                        // -------------------
+      }     // Total Time taken(Reccurance Relation): T(n) = T(n-1) + log n
+
+        (a)Reccurance/Tracing Tree:
+		 Test(n)              ------------------ log n
+		   | 
+             --------------
+             |            |
+	   log n       Test(n - 1)     ------------------log (n - 1)
+			   | 
+                     --------------
+                     |            |
+              log (n - 1)     Test(n - 2)        ------------------ log (n - 2) 
+                                  | 
+                            -------------- 
+                            |            |
+			log (n - 2)   Test(n - 3)     ------------------ log (n - 3)
+                                         | 
+                                   -------------- 
+                                   |             |
+			     log (n - 3)   Test(n - 4)    ------------------ log (n  - 4)
+                                                | 
+                                 		|
+                                                |
+                                             Test(2)          ------------------ 2
+                                                | 
+                                          -------------- 
+                                          |            |
+			                  2         Test(1)       ------------------ 1
+                                                       | 
+                                                 -------------- 
+                                                 |            |
+			                         1         Test(0)      ----------------0
+                                                              | 
+                                                              X
+                                                   -----------------------
+                                                   Total: log n + log (n - 1) + log (n - 2) .. + log 2 + log 1
+				                  = log[n * (n - 1) * (n - 2) *...*2 *1] 
+						  = log n!
+                                                  = O( n log n)
+						
+                                                  so O(n log n) is time complexity.  
+	 (b) By the Substitiution Method 
+ 		__________________
+	        | 1               n = 0
+         T(n) = |
+		| T(n-1)+ log n  n > 0
+                ----------------- 
+
+		T(n) = T(n-1) + log n
+		Substitute T(n - 1)
+	 T(n) = [T(n - 2) + log (n - 1)] + log n
+ { T(n) = T(n - 1) + log n ,  T(n-1) = T(n-2) + log (n -1) , so T(n - 2) = T(n-3) + log (n - 3)}
+	 T(n) = T(n - 3) + log (n -2) + log (n - 1) +log n
+                   |
+                   |continue for k
+         T(n) = T(n - k) + log (n -(k - 1)) + log (n -(k - 2) + .... + log (n - 1) log n 
+	 Assume n - k = 0 , n = k.
+	 T(n) = T(0) + log 1 + log 2 + log 3  + ... + log (n -1) + log n
+	 T(n) = 1 + log n!
+	      = O(n log n)
+	 Time complexity = O(n log n).
+            
+-Short Trick: For Decreasing Recursive Relation of the form  T(n) = T(n-a) + b
+	     Just multiply the b with (n - a) and it will give the Time Complexity.
+             
+             Ex - T(n) = T(n - 1) + log n = O(n log n) 
+NOTE : Strictly Check the form.
+
+(iv) Algorithm Test(int n){  // Assume Time complexity to be T(n) (usually for Recurrance func)
+	if(n > 0){
+	cout << n;         // Time complexity is 1.
+	Test(n - 1);       // Time complexity is T(n - 1).
+	Test(n - 1); 	   // Time complexity is T(n - 1).
+	}
+     }     // Total Time taken(Reccurance Relation): T(n) = 2T(n-1) + 1
+
+	(a)Reccurance/Tracing Tree:
+                          T(n)      ------------------------- 1 . 1
+                           |
+     -----------------------------------------------
+     |                     |                       | 
+     1                  T(n - 1)              T(n - 1)    ----------------- 2 . 2
+                           |                       |
+                   -------------------    -------------------
+                   |       |         |    |        |        |
+                   1   T(n - 2) T(n - 2)  1    T(n - 2)  T(n - 2)   ------------- 4 . 2 ^2
+                   |       |         |    |        |        |
+                   |       |         |    |        |        |
+                   |       |         |    |        |        | 
+                   T(0)    T(0)     T(0) T(0)    T(0)      T(0)  ------------------ 2 ^k
+ 1 + 2 + 2 ^2 + + ..... + 2 ^k =  2 ^(k+1) - 1
+
+Assume n - k = 0
+         n = k
+
+   T(n) = 2 ^n+ 1  - 1
+   O(2 ^n)
+
+	 (b) By the Substitiution Method 
+ 		__________________
+	        | 1               n = 0
+         T(n) = |
+		| 2T(n-1)+ 1  n > 0
+                ----------------- 
+
+		T(n) = 2T(n-1) + 1
+		T(n) = 2[2T(n - 2) + 1] + 1 
+		T(n) = 2 ^2 T(n - 2) + 2 + 1 
+		     = 2 ^2 [2T(n - 3) + 1] + 2 + 1
+		T(n) = 2 ^3 T(n - 3) + 2 ^2 + 2 + 1 
+		T(n) = 2 ^k T(n - k) + 2 ^(k - 1) + 2 ^(k - 2)  + ... + 2 + 1
+		T(n) = 2 ^k T(n - k) + 2 ^(k - 1) + 2 ^(k - 2) + ...  + 2 + 1
+			Assume n -k = 0
+				n = k
+		T(n) = 2^(n + 1) - 1
+		Time Complexity : O( 2^n)
+
+-Short Trick: For Decreasing Recursive Relation of the form  T(n) = cT(n-a) + b
+	     Just multiply the b with c^n and it will give the Time Complexity.
+             
+             Ex - T(n) = 2T(n - 1) + log n = O(2 ^n *log n) 
+NOTE : Strictly Check the form.
+ 
+
+-Master Theorem for Decreasing Functions
+
+T(n) = aT(n - b) + f(n)
+
+a > 0 , b > 0 and f(n) = O(n ^k) where k >= 0.
+      if  a = 1 , O( n ^(k + 1) )
+      if  a > 1 , O( n ^k  a^ (n/b) ) 
+-Recurrance Relation Dividing Functions
+
+Algorithm Test(int n) {    ---------------- T(n)
+	if( n > 1){
+		cout << n;         ------------- 1
+		Test( n / 2);      -------------- T( n/2)
+		}
+	}           //  Recurance Relation : T(n) = T(n/2) + 1
+
+
+	(a)Reccurance/Tracing Tree:
+		 T(n)
+		   | 
+             --------------
+             |            |
+	     1          T(n/2) 
+			   | 
+                     --------------
+                     |            |
+                     1          T(n/2 ^3)
+                                  |
+			          |
+				  | 
+                            -------------- 
+                            |            |
+			    1          T(n/2 ^k)
+                                         | 
+                                         X
+                               -----------------------
+                                  Total k steps 
+		                       n / 2^k = 1 
+				       n = 2^k
+			           log n = k log 2
+				       k = log n
+		           so O(log n) is time complexity
+		
+		 (b) By the Substitiution Method 
+ 		__________________
+	        | 1          n = 1
+         T(n) = |
+		| T(n/2)+ 1  n > 1
+                ----------------- 
+
+		T(n) = T(n/2) + 1
+		T(n) = T(n / 2^2) + 2
+		T(n) = T(n/ 2^3)  + 3
+		T(n) = T(n / 2^k ) + k
+		Assume n/2^k = 1
+		 n = 2^k
+	         log n = k log 2
+		 k = log n
+		O(log n) 
+
+(ii)  	        __________________
+	        | 1          n = 1
+         T(n) = |
+		| T(n/2)+ n  n > 1
+                -----------------  
+			
+			T(n) 
+			 | 
+	    -------------------------
+	    |                       | 
+	   T(n/2)                   n  --------------n
+            | 
+       --------------
+       |            |
+      T( n/2 ^2)   n/2     ---------------------- n/2
+          | 
+    --------------
+    |            |
+ T(n/2 ^3)    n/2 ^2       -------------------------- n/ 2^2
+    |
+    |
+    |---------------|
+T(n/ 2^ k)     n/2 ^(k-1)    ------------------ n / 2^ k
+
+
+
+
+T(n) = n + n/2 + n/2^ 2 + n/ 2^ 3 +... + n/2^ k 
+       n [1 + 1/2 + 1/ 2^2 +....+ 1/2 ^ k] 
+T(n) = n
+
+O(n)
+
+ (b) By the Substitiution Method 
+ 		__________________
+	        | 1          n = 1
+         T(n) = |
+		| T(n/2)+ n  n > 1
+                ----------------- 
+
+	T(n) = T(n/2) + n 
+	T(n) = [T(n/ 2^2) + n/2] + n
+	T(n) = T(n/ 2^ 3) + n/ 2^2 + n/2 + n
+			|
+			|
+			|
+	T(n) = T(n/ 2^k) + n/ 2^(k -1) + n / 2^(k -2) + ...+ n/2 + n
+	we Assume that n/2^k = 1
+	log n = k log 2
+		 k = log n
+	T(n) = T(1) + n[1/ 2^(k-1) + 1/2^(k -2) + ... + 1/2 + 1]
+	T(n) = 1 + n[1 + 1]
+	T(n) = 1 + 2n
+	Time Complexity : O(n)
+(iii) 
+
+void Test (int n){  // Assume Time complexity to be T(n) (usually for Recurrance 
+	if( n > 1){
+	for (i = 0; i < n; i++){
+	statement;    // Time complexity is n.
+	}
+	Test(n/2);   // Time complexity is T(n/2).
+	Test(n/2);   // Time complexity is T(n/2).
+       }             // Total Time taken(Reccurance Relation): T(n) = 2T(n/2) + n
+     }
+
+	(a)Reccurance/Tracing Tree:
+					                                                 |
+					     n    ------------------------------n        |
+					     |                                           |
+				     -----------------------------                       |
+                                     |                           |                       |k
+                                    n/2                         n/2   -------------n     |
+				     |                           |                       |
+			          ------------                  ----------------         |
+				  |	     |                  |              |         |
+			         n/2^2     n/2^2               n/2^2         n/2^2  ----n|
+				  |          |                  |              |         |
+                              --------     ----------       --------        -------      |
+			      |      |     |        |       |      |       |      |      |
+                           n/2^2   n/2^2 n/2^2   n/2^2   n/2^2  n/2^2    n/2^2   n/2^2 -n |
+			      |      |     |        |       |      |       |      |      |
+			      |      |     |        |       |      |       |      |      |
+			      |      |     |        |       |      |       |      |      |
+			    n/2^k  n/2^k n/2^k    n/2^k   n/2^k  n/2^k   n/2^k   n/2^k -- n
+				
+			Assume that n/2^ k = 1
+					k = log n
+				Total = nk
+				O(n log n)
+
+
+ 									
+	(b) By the Substitiution Method 
+ 		__________________
+	        | 1          n = 1
+         T(n) = |
+		| 2T(n/2)+ n  n > 1
+                ----------------- 
+	T(n) = 2T(n/2) + n
+	     = 2[2T(n/2^2) + n/2] + n
+	     = 2^2T(n/2^2) + n + n
+	     = 2^2 [2T(n/2^3 + n/2^2] + 2n 
+	T(n) = 2^3 T(n/2 ^3) + 3n
+
+	T(n) = 2^k T(n/2^k) + kn
+	Assume T(n/2^k) = T(1)
+		k = log n
+	T(n) = 2 ^k T(1) + kn
+	T(n) = n + n logn
+	Time complexity : O(n log n)
+
+- Masters Theorem for Dividing Functions
+ 	T(n) = aT(n/b) + f(n)
+	a >= 1 and b > 1
+	f(n) = O(n^k (log n) ^ p)
+
+
+case 1: if log a to base b > k then 0(n ^log a to base b)
+case 2: if log a to base b = k 
+		if p > -1   then 0(n ^k (log n) ^(p+1))
+		if p = -1 	 0(n ^k log log n)
+		if p < -1        0(n ^k) 
+case 3: if log a to base b < k if p >= 0  then 0(n ^k (log n) ^p)
+			       if p < 0  0(n ^k)
+
+Data Structures - It is a way to store and organize data in a computer, so that it can be used efficiently.
+
+We talk about data structures as:
+(i) Mathmematical / Logical models or Abstract data types 
+(ii) Implementation
+
+-Ways to choose a particular Data Structure 
+(i) What needs to be stored ?
+(ii) cost of operations
+(iii) Memory usage 
+(iv) Ease of implementation
+
+List - It is a real world entity of Collection of Object of same type.
+
+Array - It is a data structure which occpies contiguous form of memory, in this memory is allocated one after other according to the no. of indexes provided other thus resulting in the no option for expansion or extention if the data increases more than the size.
+
+Operations  
+(i) Insert Element at End  - O(1), O(n) - If array is full, will have to copy the elements to an array of double size and then add element.
+(ii) Remove - O(n)
+(iii) Insert at Particular Position - O(n)
+(iv) Access an Element - O(1)
+(v) Inserting element at begining - O(n)
+
+Working of array index:
+When we write arrayName[index] = It calls for the address BaseAddress + (Index * SizeOfDataType)  , this is the address it points to.
+
+Linked List: It is a data structure which occupies random pair of node , in which one node stores the value and other node will store the pointer variable for the next value address , the pointer in the last node is a null pointer, thus overcoming the problem of expansion and extension of a list according the the increasing data as well as save memory.It is like Treasure Hunt, in which we need to have address of the Head Node.
+
+Operations  
+(i) Insert Element at End  - O(n)
+(ii) Remove - O(n)
+(iii) Insert at Particular Position - O(n)
+(iv) Access an Element - O(n)
+(v) Inserting element at begining - O(1) [New node is created and its pointer node stores the address of the previous first node.]
+
+Array Vs Linked List
+
+-Accesing elements in array is much faster than Linked list, as we need to traverse the Whole list from the head node in order to access the particluar element in Linked list, where as in array due to contiguous memory allocation we can directly access the particular element at the node.
+
+-The size of array is fixed,whereas in linked list there no unsed memory but we occupy extra memory for pointer variables.If data is in large size linklist helps more.
+
+ -Memory may no be available as one large form as array need contiguous form of memory, memory may be avaialable as multiple small blocks(fragmented), here Linked list can be implemeted easily, due to random node access occupation of memory.
+
+-Inserting an element at beggining would take constant time for Linked list, whereas inserting at end of array would take constant time space.
+
+
+
+-Doubly Linked List
+
+ It is a data structure which occupies random trio of node, in which one node stores the 
+pointer variable to previous node and one node stores the value and other node stores the value of the next node.It enables us to easy Reverse look - up, by the use of extra memory for pointer node for previous node.
+
+-Stacks (LIFO)
+
+A list with the restriction that insertion and deletion can be performed only from one end, called the top.Constraint of Insertion and deletion can be performed from one end, generally form the top is there.
+
+Applications:
+(i) Used to store data of Functions calls/ Recursion(chain of function calls)
+(ii) Undo the editor 
+(iii) Balanced Parentheses
+
+Operations
+(i) Push(x)     |
+(ii) Pop()	|
+(iii) Top()	|  - All operations time complexity is O(1).
+(iv) IsEmpty()	| 
+
+Infix Notation - When an operator is placed between two parenthesis we refer to it as Infix Notataion.
+Ex - <operator><operator><operator>
+	(i) 2 + 3
+	(ii) A - B
+Prefix Notation - when an operator is placed before the operand it is reffered to as Prefix Notation.
+Ex - <operator><operand><operand>
+	(i) + 2 3 == 2 + 3
+	(ii) -p q == p - q
+Postfix Notation - When an operator is after the operand it is reffered to as postfix notation.
+Ex - <operand><operand><operator>
+      (i)2 3 * == 2 * 3	
+
+Note : These are notations that were introduced in order to trade of decrease of human readability and increase machine readability of mathematical operations in order to perform calculations on machines.Mostly Postfix notaion is considered on machines as it is the most intutive and machine readble form and after that the prefix the next.
+
+-Queue(FIFO)
+
+A list or collection with the restriction that insertion can be performed at one end(rear) and deletion can be performed at other end(front).
+
+Operations
+
+(i) EnQueue(x) or push(x) - Insert an element at the end.                |
+(ii) Dequeue() or pop() - Removes  and Returns element from the front.   |
+(iii) front() or peek() - To get the element at the front.		 | -- All operations time complexity is O(1).
+(iv) IsEmpty() - To check whether the list is empty.			 |
+ 
+Applications:
+
+Used where there is a shared Resource, that supposed to serve some request ,but Resourece can handle only one request at a time.
+(i) Printer Queue
+(ii) Process Scheduling
+(iii) Simulating wait
+
+Types:
+
+(i) Priority Queue - A priority queue is a type of queue that arranges elements based on their priority values.Insetion and deletion is possible at both the ends.
+
+(ii) Deque(Double Ended Queue) - A deque (double ended queue) is a linear list in which all insertions and deletions are made at the end of the list.
+
+
+- Trees 
+
+Used to represent hierarchical data.A collection of entities called node linked together to stimulate hierarchy.It is non - linear data structure, the topmost node in the tree is called root of the Tree and each node conatins some data, and may contain link/Reference to other node known as its children.It is a recursive data structure.
+                                              *  ------Root Node
+                                              |
+                                        -------------------
+                                        |                 |
+				        *                 * ----- parent
+                                        |                 | 
+                                     ----------        --------
+                                    |    |     |       |      |
+                                    *    *     *       *      * --------child
+                                         |             |
+				       -----           * ------------Leaf
+				       |   |       
+				       *   * 
+Some vocabularies:
+
+(i) Parent node - Link between preceding node.
+(ii) Child node - Node connected to ascending node.
+(iii) link - Connection between two nodes.
+(iv) Root node - Stating node of a tree.
+(v) Sibling - child of similar parent is reffered to as sibling.
+(vi) Leaf - Node with no child is known as leaf.
+(vii) Grandparent - parent of parent node is reffered to as GrandParent.
+(viii) Children with similar Grandparents are cousions.
+
+NOTE: if  there are N nodes then there will be N - 1 edges(links).
+
+-Depth of x = length of path from root to x /No of edges in path from root to x.
+
+-Height of x = No .of edges in longest path from x to a leaf.(Height of tree = Height of root node)
+
+
+-Binary Tree
+
+A Tree in which each node can have at most 2 children.Each node must have 2 or less than two childs.
+
+ 
+                                              *  ------Root Node  ------Level-0
+                                              |
+                                        -------------------
+                                        |                 |
+				        *                 * ----- parent ---- Level -1
+                                        |                 | 
+                                     -----             --------
+                                    |    |             |      |
+                                    *    *             *      * --------child ---Level -3
+                                         |             |
+				       -----           * ------------Leaf    --- level- 4
+				       |   |       
+				       *   *  
+Applications:
+
+(i) Storing naturally hierarchical data -> e.g :- file system
+(ii) Organize data for quick search, insertion , deletion -> eg:- Binary search trees
+(iii) Trie -> dictionary
+(iv) Network Routing System
+  
+-Strict binary tree
+Each node can have either 2 or 0 children.
+
+-Complete Binary Tree
+
+All levels except possibly the last are completely filled and all nodes are left as possible,maximum no of nodes at level i = 2^i ,height of complete binary tree = |_log n base 2_|(floor og log n base 2, nearest interger value) 
+
+                                              *  ------Root Node  ------Level-0
+                                              |
+                                        -------------------
+                                        |                 |
+				        *                 * ----- parent ---- Level -1
+                                        |                 | 
+                                     -----             --------
+                                    |    |             |      |
+                                    *    *             *      * --------child ---Level -2
+                                    |                  
+				  -----                
+				  |   |         ---------------Level 3
+				  *   *  
+  -Perfect Binary tree
+All levels nodes are completely filled.Maximum no of nodes in a binary tree with height h = 2 ^(no.of levels) - 1.
+height of perfect binary tree -> h = log base 2 (n +1) - 1 
+
+-Balanced Binary Tree
+Difference between height of left and right subtree for every node is not more than k(mostly 1) .
+ 
+diff = | h left - h right|
+
+We can implement binary tree using :
+(a) dynamically created nodes 
+(b) arrays
+
+-Binary Search Tree 
+A binary tree in which for each node, value of all the nodes in left subtree is lesser or equal and value of all the nodes in the right subtree is greater.
+
+				*
+				|
+			 -------------
+			|	     | 
+		     left subtree  right subtree
+	        (lesser or equal)    (greater)
+time complexity:
+(i) search : O(log n)
+(ii) insert : O(log n)
+(iii) Remove : O(log n)
+
+-Tree Traversal 
+Process of visiting each node in the tree exactly once in some order.
+Visiting means basically reading or printing the data.
+Types:
+(i) Breadth - first - we visit each child before visting the grand child.(Level order)
+(ii) Depth - first - we visit a child and visit each of its subtree.
+		 		Three Ways :
+			(a) <root><left><right> - Preorder
+			(b) <left><root><right> - Inorder
+			(c) <left><right><root> - Postorder
+-Graph 
+A graph G is an ordered pair of a set V of vetices and a set E of edges.
+G = (V, E). Part of discrete mathematics, which we just implement through coding.
+
+No of edges: if |v| = n, then 
+		 0 <= |E| <= n(n -1), if directed
+		 0 <= |E| <= n(n -1)/2, if undirected
+	Graph is said to be dense, when no of edges is close to max no of edges.
+	Graph is said to be sparse, when no of edges is less, typically close to no of vertices.
+
+walk: A sequence of vertices where each adjacent pair is connected by an edge.
+
+Path:- A path in which no vertices( and thus no edges) are repeated.
+
+Trail:- A walk in which no edges are repeated.
+
+Strongly Connected - If there is a path from any vertex to any other vertex.
+
+As we can see that when there are v vertices then the maximum no of edges is v^2, and in order to traverse all the edges of the vertice we will have v ^2 time complexity but as we know that its not a good time complexity in order to reduce the time complexity to O(n) 
+we come up with the solution of Adjacency matrix, where the order to traverse all the edges is O(n), but space complexity is O(n^2) so we have to do trade off time in place of space.
+
+But if a graph is dense then adjacency matrix is considered efficient but if a graph is parse then we would be wasting a lot of memory within the graph.
+
+Instead we can create an array of pointers and create an array for each row and store just the connections within the array and storing its address within the individual pointers.
+
+
+Sources of Error
+
+-Base case 
+-Logic
+-Recursive call
+-Input
+
+
