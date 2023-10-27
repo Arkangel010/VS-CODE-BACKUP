@@ -1,0 +1,59 @@
+1 int = 4 bytes
+1 bytes = 8 bit
+
+1.array 
+
+2. dynamic array - vector (Increases the storage capacity by 2 times) 
+
+difference between size(it is no of elements an array has currently) and capicity(it is the no of maximum no of elements an array can store)
+
+3.palindrome - similar if read inversely or normally (comaparing the first and last index of array and increasing the first index and decreasing the last index(length of array ).
+
+4.Equlibrium index - within array the element from which the L.H.S and R.H.S have equal sum.
+
+prefix sum array - In this we store the individual the sum of index from zero to the n'th Index.
+Example :- Array [ 1,2,3,4,5,6,7,8]
+           Index [ 0,1,2,3,4,5,6,7]
+          
+
+- prefix sum array 
+          Array [ 1,3,6,10,15,21,28,36]
+	    Index [ 0,1,2, 3, 4, 5, 6, 7]
+ 
+here you can see the summation of till the nth index within the prefix sum array.
+and in order to get summation from a particular index just reduce the previous index summation.
+E.G. - if we want summation from 4th index to 7 th index.
+ 	1.Get summation till 7th index 
+	2.Reduce the summation till 4th index.
+	3.summtion in prefix array till 7th index = 36 and summtion in prefix array till 4th index = 10
+	4.so summation from 4th to 7th element = 36-10 = 26.
+
+-Linear searching 
+when we address each and every element in order to meet our requirement it is known as Linear searching.
+
+Note :- The remainder after dividing any no by a divisor is always ranges between 1 - (divisor-1).
+
+-Hashing 
+
+Storing Data in a efficient way to make to simple to access.
+
+
+-collision - when the index of multiple elements becomes the same according to the algorithm and issue arises to store multiple values at the same index. 
+-Linear Probing - Searching Blank indexes within the array and storing the values if the index according to the algo is already filled and using linear searching we access the element. It occurs at time of collision. 
+-ways to avoid collision 
+>By increasing the list size
+>By inproving the hash function.
+
+-Two Pointer apporoach
+
+to study have confusion
+
+-sliding window apporach
+to study
+
+-Binary Search
+
+It is a game of finding the mid element by placing the starting and ending element and guessing that the required element is smaller or bigger than the required element and repeating the process of finding the mind element after placing the start of sample search at midpoint +1(if req element is bigger) or midpoint -1 position(if req element is lesser).
+It is applied when array is sorted in accending or decending order or monotonically increasing\decresing function.
+
+-sliding window
