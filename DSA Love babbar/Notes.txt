@@ -121,7 +121,8 @@ NOte: log ab = log a + log b
       log a ^b = b log a
       a ^ log b base c = b ^ log a base c
       a ^ b = n then b = log n to base a
-	If you compare two functions directly you can neglect the constants, but if you apply log in order to compare we need to compare including the constants.
+      log(n!) = nlogn
+If you compare two functions directly you can neglect the constants, but if you apply log in order to compare we need to compare including the constants.
 
 Best case - Searching key element present at first index.
 Average case - All posssible case time/no. of cases.
